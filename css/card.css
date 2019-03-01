@@ -1,9 +1,22 @@
   .demo-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
     float: left;
     margin: 1rem;
     position: relative;
+  }
+  .demo-card-square.mdl-card {
+    float: left;
+    margin: 1rem;
+    position: relative;
+  }
+
+  .main-card {
+    width: 320px;
+    height: 320px;
+  }
+
+  .main-second {
+    width: 320px;
+    height: 320px;
   }
 
   .demo-card-square.mdl-card:hover {
@@ -17,4 +30,9 @@
 
   .demo-card-square > .mdl-card__accent {
     background: #ff9800;
+  }
+  body {
+    background: #fafafa;
+    position: relative;
+
   }

@@ -1,0 +1,34 @@
+
+.align_center{
+  text-align: center;
+}
+
+/* Image card  */
+.demo-card-image.mdl-card {
+  width: auto ;
+  height: 100%;
+}
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+/*  padding: 16px;*/
+  background: rgba(0, 0, 0, 0.3);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.comprendre{
+  background: url('../img/menu.jpg') center / cover !important;
+}
+.main_comprendre{
+  background: url('../img/labo.jpg') center / cover no-repeat #46B6AC;
+}
+img {
+  /* vertical-align: middle; */
+  width: 100%;
+  height: auto;
+}
+.nav-top {
+	min-height: 50px;
+}
