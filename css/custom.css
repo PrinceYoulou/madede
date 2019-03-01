@@ -30,5 +30,11 @@ img {
   height: auto;
 }
 .nav-top {
-	min-height: 50px;
+	min-height: 45px;
 }
+.navbar_{
+  background-color: red;
+}
+.mdl-grid {
+    padding: 5px !important;
+  }
