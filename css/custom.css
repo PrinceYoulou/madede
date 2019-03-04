@@ -46,3 +46,15 @@ img {
 .mdl-button .material-icons {
 	color: white;
 }
+table {
+  width: 100%;
+}
+.td_footer {
+  width: 20%;
+  text-align: center;
+  -webkit-color: gray;
+  color: gray;
+}
+.menu_On {
+  color: white;
+}
