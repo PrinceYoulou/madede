@@ -43,3 +43,6 @@ img {
 	color: white !important;
   font-weight: 500;
 }
+.mdl-button .material-icons {
+	color: white;
+}
