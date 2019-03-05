@@ -12,11 +12,15 @@
   height: 52px;
 /*  padding: 16px;*/
   background: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 .demo-card-image__filename {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+}
+.filename_main {
+  text-align: center;
 }
 .main{
   background: url('../img/main.jpg') center / cover !important;
@@ -66,4 +70,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.mdl-grid {
+	margin-bottom: 20px !important;
 }
