@@ -18,11 +18,14 @@
   font-size: 14px;
   font-weight: 500;
 }
-.comprendre{
-  background: url('../img/menu.jpg') center / cover !important;
+.main{
+  background: url('../img/main.jpg') center / cover !important;
 }
-.main_comprendre{
-  background: url('../img/labo.jpg') center / cover no-repeat #46B6AC;
+.recette1 {
+  background: url('../img/recette1.jpg') center / cover !important;
+}
+.recette2 {
+  background: url('../img/recette2.jpg') center / cover !important;
 }
 img {
   /* vertical-align: middle; */
