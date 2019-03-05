@@ -11,7 +11,7 @@
 .demo-card-image > .mdl-card__actions {
   height: 52px;
 /*  padding: 16px;*/
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
 }
 .demo-card-image__filename {
   color: #fff;
@@ -60,4 +60,10 @@ table {
 }
 .menu_On {
   color: white;
+}
+a {
+	color: rgb(255,255,255) !important;
+}
+a:hover {
+  text-decoration: underline;
 }
