@@ -59,8 +59,10 @@ table {
 .td_footer {
   width: 20%;
   text-align: center;
-  -webkit-color: gray;
   color: gray;
+}
+.td_footer > span > a{
+  color: gray !important;
 }
 .menu_On {
   color: white;
