@@ -9,7 +9,7 @@
   height: 100%;
 }
 .demo-card-image > .mdl-card__actions {
-  height: 52px;
+  /* height: 52px; */
 /*  padding: 16px;*/
   background: rgba(0, 0, 0, 0.4);
   color: white;
@@ -24,6 +24,9 @@
 }
 .main{
   background: url('../img/main.jpg') center / cover !important;
+}
+.portrait {
+  background: url('../img/agro1.jpg') center / cover !important;
 }
 .recette1 {
   background: url('../img/recette1.jpg') center / cover !important;
@@ -64,8 +67,11 @@ table {
 .td_footer > span > a{
   color: gray !important;
 }
-.menu_On {
-  color: white;
+.menu_On > i {
+  color: white !important;
+}
+.menu_On > span > a{
+  color: white !important;
 }
 a {
 	color: rgb(255,255,255) !important;
