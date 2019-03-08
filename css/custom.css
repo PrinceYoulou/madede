@@ -114,3 +114,19 @@ h4 {
 	margin-top: 16px !important;
 	margin-bottom: 0px !important;
 }
+.portrait_bg {
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.99);
+  width: 85%;
+  margin: 0 auto;
+  padding: 0px 10px;;
+  text-align: center;
+}
+.portrait_bg  > h5{
+  margin-bottom: 0px;
+}
+.portrait_bg > img {
+  min-height: 130px !important;
+}
+.portrait_bg > p, h5 {
+  text-align: center;
+}
