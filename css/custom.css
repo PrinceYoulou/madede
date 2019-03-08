@@ -99,3 +99,12 @@ a:hover {
     width: 3%;
   }
   }
+.subtitle {
+    font-size: 12px;
+    font-style: italic;
+  }
+h4 {
+	-moz-osx-font-smoothing: grayscale;
+	margin-top: 16px !important;
+	margin-bottom: 0px !important;
+}
