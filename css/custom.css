@@ -130,3 +130,7 @@ h4 {
 .portrait_bg > p, h5 {
   text-align: center;
 }
+.slider_quiz{
+	min-width: 350px;
+	margin-top: 20px;
+}
