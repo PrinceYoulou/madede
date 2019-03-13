@@ -132,5 +132,9 @@ h4 {
 }
 .slider_quiz{
 	min-width: 350px;
-	margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.demo-list-item {
+  width: 300px;
 }
