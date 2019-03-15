@@ -160,3 +160,6 @@ h4 {
 .section_question > h4 {
   margin: 0px auto 10px auto !important;
 }
+.text_div {
+  padding: 0px 10px;
+}
