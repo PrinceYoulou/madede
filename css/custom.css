@@ -149,3 +149,9 @@ h4 {
 	line-height: normal !important;
 	height: 50px !important;
 }
+.continuer {
+  text-transform: none !important;
+  line-height: normal !important;
+	width: 35%;
+	margin: 20px auto 0px auto;
+}
