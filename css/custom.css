@@ -157,3 +157,6 @@ h4 {
 .section_question {
   text-align: center ;
 }
+.section_question > h4 {
+  margin: 0px auto 10px auto !important;
+}
