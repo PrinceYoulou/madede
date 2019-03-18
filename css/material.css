@@ -3844,7 +3844,7 @@ ul, ol {
   background: transparent;
   border: none;
   border-radius: 2px;
-  color: rgb(0,0,0);
+  /* color: rgb(0,0,0); */
   position: relative;
   height: 36px;
   margin: 0;
