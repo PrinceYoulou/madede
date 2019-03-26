@@ -157,3 +157,9 @@ h4 {
 .text_div {
   padding: 0px 10px;
 }
+.recette_h3 {
+	font-size: 18px !important;
+	text-align: left !important;
+	margin: 5px 0px !important;
+	line-height: 15px !important;
+}
