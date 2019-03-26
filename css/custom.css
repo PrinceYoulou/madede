@@ -67,17 +67,11 @@ table {
 .td_footer > span > a{
   color: gray !important;
 }
-.menu_On > i {
-  color: white !important;
-}
-.menu_On > span > a{
-  color: white !important;
-}
 a {
-	color: rgb(255,255,255) !important;
+	color: white !important;
 }
 a:hover {
-  text-decoration: underline;
+  color: rgb(214, 205, 205) !important;
 }
 .mdl-grid {
 	margin-bottom: 20px !important;
