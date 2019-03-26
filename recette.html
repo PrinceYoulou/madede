@@ -52,70 +52,25 @@
       <!-- <div class="page-content mdl-container"> -->
 
       <div id="_main" class="mdl-grid container">
+        <div class="contentImage mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
 
-        <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet recette_">
-          <div class="demo-card-image mdl-card card-main mdl-shadow--2dp main">
-            <div class="mdl-card__title mdl-card--expand"></div>
-            <div class="mdl-card__actions filename_main">
-              <h3 class="recette_h3">Poissons aux haricots à l'étouffés</h3>
-            </div>
-          </div>
         </div>
+
         <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
           <ul class="list-group">
             <li class="list-group-item d-flex justify-content-between align-items-center active">
               Ingredients
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              500g de cuisse de poulet
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              300g de pate d'arachide
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              250 cl d'huile
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Une pincée de sel
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              Poivre noir
-            </li>
+
+            <div class="contentIngredient">
+
+            </div>
             <li class="list-group-item d-flex justify-content-between align-items-center active">
               Préparation
             </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              1. Velit aute mollit ipsum ad dolor consectetur nulla officia culpa adipisicing exercitation
-              fugiat tempor. Voluptate deserunt sit sunt nisi aliqua fugiat proident ea ut. Mollit
-              voluptate reprehenderit occaecat nisi ad non minim tempor sunt voluptate consectetur
-              exercitation id ut nulla. Ea et fugiat aliquip nostrud sunt incididunt consectetur culpa
-              aliquip eiusmod dolor. Anim ad Lorem aliqua in cupidatat nisi enim eu nostrud do aliquip
-              veniam minim.<br>
+            <div class="contentPrepation">
 
-              2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur enim et felis
-              fringilla, eget consequat nisi ultrices. Maecenas faucibus euismod lectus, a viverra
-              elit mattis eu. Etiam tincidunt tempor auctor. Donec tincidunt mi id elit pellentesque,
-              id rhoncus neque dapibus. Phasellus lorem odio, posuere at velit scelerisque, consequat
-              lobortis purus. Nulla at tristique felis. Aenean sit amet metus sed mi consequat gravida
-              rhoncus ac turpis. <br>
-
-              3. Donec eget neque commodo, pellentesque magna eu, consectetur magna. Nulla vitae pretium
-              libero. Nulla leo velit, posuere sed scelerisque sit amet, tempor in est. Curabitur
-              consectetur suscipit risus at dictum. Duis eget condimentum nibh. Cras egestas ultrices
-              orci eu pharetra. Sed pulvinar et elit sed rhoncus. Quisque vehicula lacus ac nisl porta,
-              in gravida nisi tincidunt. Nunc fermentum, lacus quis porta finibus, lectus elit vehicula
-              arcu, et gravida diam turpis non nulla. Morbi ut lectus ac mi lacinia aliquet id eget diam.
-              Fusce volutpat venenatis leo in dignissim. Etiam nec metus justo. <br>
-
-              4. Sed euismod libero eget imperdiet efficitur. Pellentesque habitant morbi tristique senectus
-              et netus et malesuada fames ac turpis egestas. Sed sagittis lectus ac augue consectetur, at
-              tempus libero cursus. Quisque nec dui id massa finibus volutpat et nec purus. Vivamus et
-              turpis varius, finibus arcu sit amet, dapibus ante. Etiam consectetur augue ut eleifend mattis.
-              Cras ut diam quis odio fermentum euismod. Nam aliquet, tortor malesuada ultricies pretium, nisl
-              dolor sollicitudin risus, id vestibulum turpis felis non ex. Quisque libero mi, semper eu neque
-              sed, varius iaculis dui. Nam nec purus felis. In quis sem non quam ultricies pretium sed at augue.
-              Nam eget ultricies ex. Morbi sodales vestibulum urna a aliquet. <br>
-            </li>
+            </div>
           </ul>
         </div>
       </div>
@@ -175,6 +130,64 @@
       <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+
+      <script src="js/recipes_data.js"></script>
+      <script>
+
+        function buildRecipe(recipe) {
+          let template = `<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+                    <div class="demo-card-image mdl-card mdl-shadow--2dp"
+                        style='background:url(${recipe.pathToImage})  center / cover !important'>
+                        <div class="mdl-card__title mdl-card--expand"></div>
+                        <div class="mdl-card__actions">
+                            <span class="demo-card-image__filename"><a
+                                    href="recette.html#${recipe.id}">${recipe.titre}</a></span>
+                        </div>
+                    </div>
+                </div>`;
+          $(".contentImage").append(template);
+        }
+
+        function buildIngredient(ingredient) {
+          let template = `  <li class="list-group-item d-flex justify-content-between align-items-center">
+              ${ingredient}
+            </li>`;
+          $(".contentIngredient").append(template);
+
+        }
+
+        function addPreparation(preparation) {
+
+          $(".contentPrepation").append(`<li class="list-group-item d-flex justify-content-between align-items-center">
+              ${preparation}
+            </li>
+          `);
+
+        }
+
+        let hash = parseInt(window.location.hash.substring(1));
+        if (hash === 0) {
+          buildRecipe(data.dailyRecipe);
+          let contentIngredient = data.dailyRecipe.ingredients.forEach(element => {
+            buildIngredient(element.nom);
+          });
+
+          addPreparation(data.dailyRecipe.preparation);
+
+
+        } else {
+          data.recipes.forEach(element => {
+            if (element.id === hash) {
+              buildRecipe(element);
+              element.ingredients.forEach(ingredient => {
+                buildIngredient(ingredient.nom);
+              });
+              addPreparation(element.preparation);
+            }
+          });
+        }
+      </script>
+
 </body>
 
 </html>
