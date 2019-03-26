@@ -20,7 +20,7 @@
   <!-- Material Design icon font -->
   <link rel="stylesheet" href="css/family=Material+Icons.css">
 
-  <title>Nathan Bouzoba :: Portraits</title>
+  <title> Portraits</title>
 </head>
 
 <body>
@@ -50,65 +50,38 @@
     <!-- <div class="page-content mdl-container"> -->
 
     <div id="_main" class="mdl-grid container">
-      <div class="portrait_bg">
-        <img src="img/agro1.jpg" alt="">
-        <h5>Nathan Bouzoba</h5>
-        agriculteur
-        </p>
-        <p>Nullam magna ante, eleifend nec risus eu, lobortis imperdiet orci. In hac habitasse platea dictumst. Integer
-          posuere finibus nibh, sit amet lacinia dui cursus ac. Quisque et nisl non diam ullamcorper eleifend vel ut
-          est. Donec venenatis faucibus varius. </p>
-        <p>
-          12 rue Mandolina<br>
-          Quartier Loboko, Bouendza <br>
-          06 666 66 66 /05 555 55 55
-        </p>
-      </div>
+
     </div>
 
     <div class="nav-top">
       <nav class="navbar navbar_ fixed-bottom navbar-light">
         <table>
           <tr>
+            <td class="td_footer">
+              <i class="material-icons">slow_motion_video</i><br>
+              <span><a href="index.html">Recette</a></span>
+            </td>
+            <td class="td_footer">
+              <i class="material-icons">video_label</i><br>
+              <span><a href="haricot.html">Haricot</a></span>
+            </td>
+            <td class="td_footer">
+              <i class="material-icons">slow_motion_video</i><br>
+              <span>
+                <a href="quiz.html">Quiz</a>
+              </span>
+            </td>
+            <td class="td_footer">
+              <i class="material-icons">video_label</i><br>
+              <span>
+                <a href="cycle.html">Production</a>
+              </span>
+            </td>
             <td class="td_footer menu_On">
-              <a href="index.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Recette
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="haricot.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Haricot
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="quiz.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Quiz
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="cycle.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Production
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="portrait.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Portrait
-                </span>
-              </a>
+              <i class="material-icons">slow_motion_video</i><br>
+              <span>
+                <a href="portrait.html">Portrait</a>
+              </span>
             </td>
           </tr>
         </table>
@@ -121,6 +94,36 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script>
+      $(document).ready(function () {
+        let portraitIndex = window.location.hash.substring(1);
+
+        function buildCard(portrait) {
+          let template = `  <div class="portrait_bg">
+            <img src="${portrait.pathToImage}" alt="">
+            <h5>${portrait.firstName} ${portrait.lastName}</h5>
+            ${portrait.fonction}
+            </p>
+            <p>${portrait.description}</p>
+            <p>
+              ${portrait.adresse}<br>
+              ${portrait.localite} <br>
+              ${portrait.telephone}
+            </p>
+          </div>`;
+          $("#_main").append(template);
+        }
+
+        data.forEach(element => {
+          if (element.id === parseInt(portraitIndex)) {
+            buildCard(element);
+          }
+
+        });
+      });
+    </script>
 </body>
 
 </html>
