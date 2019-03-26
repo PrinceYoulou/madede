@@ -1,7 +1,7 @@
 const data = {
     "dailyRecipe": {
         "id": 0,
-        "titre": "Poulet à la patte d'arachide",
+        "titre": "Poulet",
         "pathToImage": "../img/main.jpg",
         "temps": "2h",
         "ingredients": [
