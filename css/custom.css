@@ -138,7 +138,7 @@ h4 {
 }
 .answer-button {
 	text-transform: none !important;
-	width: 100%;
+	width: 90%;
 	line-height: normal !important;
 	height: 50px !important;
 }
@@ -174,4 +174,8 @@ h4 {
 .menu:hover {
   color: #212529 !important;
   text-decoration: underline: ;
+}
+.start {
+	background: #003718 !important;
+	color: white;
 }
