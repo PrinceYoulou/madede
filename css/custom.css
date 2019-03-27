@@ -157,7 +157,17 @@ h4 {
 .text_div {
   padding: 0px 10px;
 }
-
+.recette_h3 {
+	font-size: 18px !important;
+	text-align: left !important;
+	margin: 5px 0px !important;
+	line-height: 15px !important;
+}
+.list-group-item.active {
+	color: black !important;
+	background-color: rgba(158,158,158, 0.20) !important;
+	border-color: rgba(158,158,158, 0.20) !important;
+}
 .menu {
   color: #212529 !important;
 }
