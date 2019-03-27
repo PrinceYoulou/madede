@@ -161,3 +161,7 @@ h4 {
 .menu {
   color: #212529 !important;
 }
+.menu:hover {
+  color: #212529 !important;
+  text-decoration: underline: ;
+}
