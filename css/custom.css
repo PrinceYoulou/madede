@@ -1,7 +1,9 @@
 
 .align_center{
   text-align: center;
+   margin: auto;
 }
+
 
 /* Image card  */
 .demo-card-image.mdl-card {

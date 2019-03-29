@@ -93,7 +93,7 @@ function ask_question(){
     q_data = questions[ question_idx ]
     // update question number
     $("#question_nb_value").html(questions_count);
-    $(".progress-bar").css({"width": questions_count+"0%"});
+    $(".progress-bar").css({"width": questions_count+"0%","background-color":"#003718"});
 
     // update question text
     $("#question_text").html(q_data.text);
