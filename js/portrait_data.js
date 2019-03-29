@@ -1,7 +1,7 @@
 const data = [
     {
         "id": 1,
-        "pathToImage": "../img/agro1.jpg",
+        "pathToImage": "./img/agro1.jpg",
         "firstName": "Luc",
         "lastName": "MAKOUALA",
         "fonction": "agriculteur",
@@ -13,7 +13,7 @@ const data = [
     {
 
         "id": 2,
-        "pathToImage": "../img/agro1.jpg",
+        "pathToImage": "./img/agro1.jpg",
         "firstName": "Jean",
         "lastName": "ITOUA",
         "fonction": "agriculteur",
@@ -25,7 +25,7 @@ const data = [
     {
 
         "id": 3,
-        "pathToImage": "../img/agro1.jpg",
+        "pathToImage": "./img/agro1.jpg",
         "firstName": "Helène",
         "lastName": "NGABA",
         "fonction": "agriculteur",
@@ -37,7 +37,7 @@ const data = [
     {
 
         "id": 4,
-        "pathToImage": "../img/agro1.jpg",
+        "pathToImage": "./img/agro1.jpg",
         "firstName": "Patrick",
         "lastName": "MOSSALA",
         "fonction": "agriculteur",
