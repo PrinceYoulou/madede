@@ -58,9 +58,9 @@ function quiz_finish(){
     $("#question_body").css("display", "none");
 	$("#comment_1").html("<p>La partie est terminée !</p>");
 
-    var content = "<input type='button' class='btn btn-primary' value='Rejouer' onclick='window.location.reload();' />";
+    var content = "<input type='button' class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect' value='Rejouer' onclick='window.location.reload();' />";
     content += "&nbsp;&nbsp;";
-    content += "<a href='index.html' class='btn btn-primary'>Quitter</a>"
+    //content += "<br><br> <a href='index.html' class='btn btn-primary'>Quitter</a>"
     $("#question_next_replay").html(content);
     
     perf = score / score_max * 100;

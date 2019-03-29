@@ -1,5 +1,5 @@
 //number of questions to ask
-var questions_nb=3;
+var questions_nb=4;
 
 // reset score
 var score=0;
@@ -79,6 +79,27 @@ var questions = [
             },
         ]
     },
+    {
+        "text" : "Quels sont les symptômes possibles qui vous rappellent que vous devez manger du Pondu?",
+        "time": 15,
+        "answers": [ 
+                {
+                    "text" : "n'importe quoi",
+                    "comment": "Les symptômes possible du manque de haricot sont : courbature",
+                    "correct": false,
+                },
+                {
+                    "text" : "maux de tête",
+                    "comment": "Allez consulter un resto le plus proche de votre position dès que vous ressentez ces symptômes.",
+                    "correct": true,
+                },
+                {
+                    "text" : "Douleur aux nez",
+                    "comment": "Les symptômes possible du manque de haricot sont : fatigue manque de motivation",
+                    "correct": false,
+                },
+            ]
+        },
 ]
 
 
