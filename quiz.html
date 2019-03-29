@@ -21,25 +21,31 @@
   <link rel="stylesheet" href="css/family=Material+Icons.css">
 
   <title>Madédé :: Quiz :: Testez vos connaissances sur le haricot </title>
+
+  <script src="js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/quiz_questions.json"></script>
+  <script src="js/quiz_engine.js"></script>
 </head>
 
 <body>
-  <div class="nav-top">
+  <div class="nav-top" >
     <nav class="navbar navbar_ fixed-top navbar-light">
       <!-- <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a> -->
       <span class="mdl-logo"><img src="img/logo.png" alt=""></span>
       <a class="navbar-brand" href="#">Madédé</a>
       <!-- Right aligned menu below button -->
-      <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+      <button id="demo-menu-lower-right"
+              class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">more_vert</i>
       </button>
 
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+          for="demo-menu-lower-right">
         <li class="mdl-menu__item">
           <a href="partager.html" class="menu">Partager</a>
         </li>
         <li class="mdl-menu__item">
-          <a class="menu" href="aide.html">Aide</a>
+          <a href="aide.html">Aide</a>
         </li>
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
@@ -48,106 +54,54 @@
 
   <div class="text_div">
 
-    <!-- <div class="page-content mdl-container"> -->
+  <!-- <div class="page-content mdl-container"> -->
 
-    <div id="_main" class="mdl-grid container">
+  <div id="_main" class="mdl-grid container">
 
-      <div class="slider_quiz">
-        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="50" tabindex="0">
+    <div class="slider_quiz">
+      <div class="progress" style="height: 20px;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-      <section class="section_question">
-        <h4>Question 5/10</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          At quo dolore maxime voluptatum natus in saepe. Deserunt
-          ipsa illum sapiente beatae, sed eos obcaecati cupiditate
-          voluptates, amet vitae impedit rem ?</p>
-      </section>
-      <div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Cras justo odio
-          </button><br>
-        </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Dapibus ac facilisis in
-          </button><br>
-        </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Morbi leo risus
-          </button><br>
-        </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Porta ac consectetur ac ipsa illum sapiente beatae, sed eos obcaecati cupiditate
-          </button><br>
-        </div>
+    </div>
+    <section class="section_question align_center">
+      <h4>Question <span id="question_nb_value"></span>/10</h4>
+      <p><div id="question_text"></div></p>
+    </section>
+    <div class="align_center">
+      <div class="answer" id="answers"></div>
+      <div id="question_comment">
+          <div id="comment_1"></div>
+          <div id="comment_2"></div>
       </div>
-
-      <div class="continuer">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect start">
-          CONTINUER
-        </button><br>
-      </div>
-
     </div>
 
-    <div class="nav-top">
-      <nav class="navbar navbar_ fixed-bottom navbar-light">
-        <table>
-          <tr>
-            <td class="td_footer menu_On">
-              <a href="index.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Recette
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="haricot.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Haricot
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="quiz_start.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Quiz
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="cycle.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Production
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="portrait.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Portrait
-                </span>
-              </a>
-            </td>
-          </tr>
-        </table>
-      </nav>
+    <div class="continuer align_center">
+        <div id="question_next_replay"></div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/material.min.js"></script>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  </div>
+
+  <div class="nav-top" >
+    <nav class="navbar navbar_ fixed-bottom navbar-light">
+      <table>
+        <tr>
+          <td class="td_footer">
+            <a href="quiz.html">
+            <i class="material-icons">warning</i><br>
+            <span>Sortir</span>
+          </a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/material.min.js"></script>
+  <script src="js/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </body>
-
 </html>

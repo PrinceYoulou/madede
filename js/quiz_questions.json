@@ -1,0 +1,112 @@
+//number of questions to ask
+var questions_nb=3;
+
+// reset score
+var score=0;
+
+// define questions and answers
+var questions = [
+    {
+    "text": "Que savez-vous du haricot?",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "Un fruit",
+                "comment": "le haricot blabla.",
+                "correct": false,
+            },
+            {
+                "text" : "Un legume",
+                "comment": "balablacar",
+                "correct": true,
+            },
+            {
+                "text" : "Une mouche",
+                "comment": "Le paludisme est une maladie, responsable en 2015 de 438 000 décès dans le monde.",
+                "correct": false,
+            },
+            {
+                "text" : "un  inconnu",
+                "comment": "Le haricot est un inconnu",
+                "correct": false,
+            },
+        ]
+    },    
+    {
+    "text": "Quand devons nous cultiver le haricot",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "pendant la periode la plus probable",
+                "comment": "Vous avez raison. Dès que vous pensez etre cable faites le, allez rapidement prendre votre houe.",
+                "correct": true,
+            },
+            {
+                "text" : "je ne sais pas ",
+                "comment": "aller verifier vous meme",
+                "correct": false,
+            },
+            {
+                "text" : "Attendre que quelqu'un le fasse pour moi",
+                "comment": "la famine ne tue pas",
+                "correct": false,
+            },
+            {
+                "text" : "Aller consulter un restaurant",
+                "comment": "Va consulter un restaurant. Il est le seul à pouvoir te faire un bon plat.",
+                "correct": false,
+            },
+        ]
+    },
+    {
+    "text" : "Quels sont les symptômes possibles qui vous rappellent que vous devez manger du haricot?",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "courbatures",
+                "comment": "Les symptômes possible du manque de haricot sont : courbature",
+                "correct": false,
+            },
+            {
+                "text" : "vomissements, maux de tête",
+                "comment": "Allez consulter un resto le plus proche de votre position dès que vous ressentez ces symptômes.",
+                "correct": true,
+            },
+            {
+                "text" : "Douleur aux oreilles",
+                "comment": "Les symptômes possible du manque de haricot sont : fatigue manque de motivation",
+                "correct": false,
+            },
+        ]
+    },
+]
+
+
+/*
+    {
+    "text" : "",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "",
+                "comment": "",
+                "correct": false,
+            },
+            {
+                "text" : "",
+                "comment": "",
+                "correct": false,
+            },
+            {
+                "text" : "",
+                "comment": "",
+                "correct": false,
+            },
+            {
+                "text" : "",
+                "comment": "",
+                "correct": false,
+            },
+        ]
+    },
+*/
