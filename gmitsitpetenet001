@@ -1,0 +1,558 @@
+[33mcommit 8dc67411823cd4f85c125cef1401055a977e3496[m[33m ([m[1;36mHEAD -> [m[1;32mquiz[m[33m)[m
+Author: petenet001 <petenet001@gmail.com>
+Date:   Fri Mar 29 13:06:13 2019 +0100
+
+    retouche de la page quiz et ajout des fichiers indispensables
+
+[33mcommit ad66c774b09801c4177d005aac4cc28d21aea775[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 2d0336e 1167ed1
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Thu Mar 28 14:18:17 2019 +0100
+
+    Merge pull request #8 from PrinceYoulou/hashPaginationBranch
+    
+    pagination management at the portrait view and the recipe view
+
+[33mcommit 2d0336e6864bd63ff389fa59a7a7890eb9c460da[m
+Merge: 683bb4b 0cd6847
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Thu Mar 28 14:17:07 2019 +0100
+
+    Merge pull request #7 from PrinceYoulou/integretyBranch
+    
+    Integrity branch
+
+[33mcommit 1167ed1329339ccbd7efea154cd1bafee6a5a879[m[33m ([m[1;31morigin/hashPaginationBranch[m[33m)[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:08:46 2019 +0100
+
+    add hash pagination in index.html
+
+[33mcommit 0ffe9f49d3deed88871f4c86bff3457fd87dccdf[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:07:44 2019 +0100
+
+    add portrait_luc hash pagination
+
+[33mcommit 5a1ca92dbadcc82a8af7a11b1151d3d6fc00c782[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:06:26 2019 +0100
+
+    add potrait hash pagination
+
+[33mcommit f820a75666d48359b84b069a0d45d2b06936f0f7[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:05:01 2019 +0100
+
+    add recette hash pagination
+
+[33mcommit 8d1d8f1c09b438d81d45642abe84cdb7162fc7a8[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:03:51 2019 +0100
+
+    add recipes json object
+
+[33mcommit 694a1e3fc585dfbfe33a565fec128dd2b5b1d995[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 10:02:00 2019 +0100
+
+    adding json portrait data
+
+[33mcommit 0cd6847d45d8c0a4c8bd43b33a566a496edfe61d[m[33m ([m[1;31morigin/integretyBranch[m[33m)[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:59:02 2019 +0100
+
+    delete integrity for recette.html page
+
+[33mcommit 7f1e92e61cff8fadca36f119874d5148fbbad82a[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:58:11 2019 +0100
+
+    delete integrity for quiz.html page
+
+[33mcommit 38fc4e2eab6bc6cfc5a36d7ad2d00b2a50038754[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:57:21 2019 +0100
+
+    delete integrity for quiz_start.html page
+
+[33mcommit 93126911256d5ea9ccf8fc0cf906bf6bde35cde7[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:56:22 2019 +0100
+
+    delete integrity for portrait.html page
+
+[33mcommit 785e048593672e6eccceacb8cf1bfc50e93cad85[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:55:31 2019 +0100
+
+    delete integrity for portrait_luc.html page
+
+[33mcommit 29547c8340a4c154b9396d93432e239291bdaead[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:54:38 2019 +0100
+
+    delete integrity for haricot.html page
+
+[33mcommit 93d88d1de659cfe343edab7cde46dc2a47deb868[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:53:43 2019 +0100
+
+    delete integrity for cycle.html page
+
+[33mcommit 72532090aa92576cb2f0d48e2fcec07193e89ad3[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:52:34 2019 +0100
+
+    delete all min css integrity
+
+[33mcommit 22f45e5ee71ba19645172b1987bf324e782535ad[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:51:46 2019 +0100
+
+    delete boostrap css integrity
+
+[33mcommit d8f97e87d42e1da138b863989f2d084e87d0589c[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:51:01 2019 +0100
+
+    delete boostrap integrity
+
+[33mcommit 3ea3e218581ea8308c413bb38165b5fb9803cff5[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:50:34 2019 +0100
+
+    delete integrity for popper.js
+
+[33mcommit a2b11455185c7a5df82c356fde2f4013a786e40a[m
+Author: OrionWambert <wambertorion@gmail.com>
+Date:   Thu Mar 28 09:49:41 2019 +0100
+
+    delete slim integrity
+
+[33mcommit 683bb4bb413daa8c0af385d100d414d30331283d[m
+Merge: 122a096 8faf69e
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Wed Mar 27 14:32:09 2019 +0100
+
+    Merge pull request #6 from PrinceYoulou/quiz
+    
+    Quiz
+
+[33mcommit 122a096f4b23a4362d95975dcfd4534b988ba5ac[m
+Merge: c88d73d f4af45f
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Wed Mar 27 14:28:29 2019 +0100
+
+    Merge pull request #4 from PrinceYoulou/page_title
+    
+    Page title
+
+[33mcommit f4af45f1452c243a8e7572004cfcf6abffe9ba12[m[33m ([m[1;31morigin/page_title[m[33m)[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 13:55:59 2019 +0100
+
+    deleted class added
+
+[33mcommit c88d73d1cde76694edabfced7cdb14249ca08fcb[m
+Merge: 8d154a1 2cd9b3b
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Wed Mar 27 13:40:50 2019 +0100
+
+    Merge pull request #5 from PrinceYoulou/menu
+    
+    Menu
+
+[33mcommit 06239d30f68c323d444a8f31613013d7f586e6d3[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:40:04 2019 +0100
+
+    page title modified
+
+[33mcommit 8faf69e6317c973bac707d0b33801e9f8ac0116d[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:33:28 2019 +0100
+
+    quiz link on nav bar modified
+
+[33mcommit 9f8dec78ccd032b305739c32eca0fdddbb7d65f0[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:27:02 2019 +0100
+
+    continuer button class changed
+
+[33mcommit 07f21bdb41d3aa74699444547e6d958b8717c6d0[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:24:31 2019 +0100
+
+    button width modified 100% -> 90%
+
+[33mcommit e3fa808bdece617ff0a9096f420fa43c9adccd64[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:20:24 2019 +0100
+
+    start quiz link added
+
+[33mcommit c41aed5fbf0a1e56608839cad93805309c7959e4[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:18:04 2019 +0100
+
+    start class created
+
+[33mcommit 8cec8d1342386ff22ca3f548cc544a9d152b19c7[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:17:53 2019 +0100
+
+    intro text modified and start button added
+
+[33mcommit 80d7b080e51773b66edfec5ee1cf57ea6822f011[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:04:43 2019 +0100
+
+    slider quie removed
+
+[33mcommit 43ee55208cac7f22f19eba9d85b04f50ec1ba7b2[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:04:24 2019 +0100
+
+    quiz start page created from quiz page
+
+[33mcommit 8fbaa37b31e7ce21c37ddf2016266ef033aa5c3c[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 07:00:11 2019 +0100
+
+     menu link text decoration modified
+
+[33mcommit f4fb1bd1585053a8ff697802d6e5c8911c7753d7[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 06:55:52 2019 +0100
+
+    menu class imlpemented
+
+[33mcommit bd60b89310dab8937314bec093147e429743c481[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 27 06:55:35 2019 +0100
+
+    menu class created
+
+[33mcommit 2cd9b3b4354bdfa75fbf1856c7e97b69f8cc1c99[m
+Merge: ed21615 8d154a1
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Tue Mar 26 16:24:17 2019 +0100
+
+    Merge pull request #3 from PrinceYoulou/recette
+    
+    Recipes details page created
+
+[33mcommit 8d154a1550baaf9d338b0a05526fa87dbe367c66[m[33m ([m[1;31morigin/recette[m[33m)[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 26 16:17:11 2019 +0100
+
+    badge pill removed
+
+[33mcommit ed21615608ea3a699755f20b4301c0d996b0b9e6[m
+Merge: 41c844c 12c710e
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Tue Mar 26 16:09:51 2019 +0100
+
+    Merge pull request #2 from PrinceYoulou/fix_footer_button
+    
+    Fix footer button
+
+[33mcommit e0d8385bd4b7af1df6cc4ac6aaacd9680bcc8126[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 26 16:07:33 2019 +0100
+
+    header recette details modified
+
+[33mcommit 425b09574716058b8cce011cd3101ad3ebac47b3[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 26 16:05:53 2019 +0100
+
+    recette title style modified
+
+[33mcommit d9312e064e2d9a1bd99971ebd9dbc4a28ec6a848[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 26 15:59:41 2019 +0100
+
+    ingredients list items created and text aded
+
+[33mcommit b4e6dafcdea4cbbadb308e09e6a81d1a95580b9d[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 26 13:25:53 2019 +0100
+
+    Recette page created
+
+[33mcommit 12c710ef55d0aa447a218887e86241d2f7623742[m
+Merge: 8e41530 660e958
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Mon Mar 18 16:34:01 2019 +0100
+
+    fix conflit
+
+[33mcommit 8e41530be8ff80e74378b7c306738c0c94e89f6a[m
+Merge: 69e4ad1 41c844c
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Mon Mar 18 16:27:28 2019 +0100
+
+    fix conflit
+
+[33mcommit 69e4ad1195b99fafc57fa06c1502c9bc2bcbb349[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Mon Mar 18 16:19:22 2019 +0100
+
+    remove class menu_On
+
+[33mcommit 4cbf472c01013c9f9d7b14602215161ba58ee765[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Mon Mar 18 16:18:44 2019 +0100
+
+    fix link over color
+
+[33mcommit 660e9585b507a545a7380940b992080789bb9565[m
+Merge: 7fd6fc6 41c844c
+Author: Ricken BAZOLO <ricken07@users.noreply.github.com>
+Date:   Sun Mar 17 23:59:57 2019 +0100
+
+    Merge branch 'master' into fix_footer_button
+
+[33mcommit 41c844cdf26de8c3be06cfc9ac714247be83db90[m
+Merge: 741709e 01009b2
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Fri Mar 15 11:39:14 2019 +0100
+
+    Merge pull request #1 from PrinceYoulou/quiz
+    
+    Quiz
+
+[33mcommit 01009b2a21e0612afce656ca5387e2dcc01234dd[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 11:19:31 2019 +0100
+
+    changed mad -> madede
+
+[33mcommit 171bf6a61289eecc4ac97166177daedbfc1d085f[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:55:03 2019 +0100
+
+    sider value set to 50
+
+[33mcommit 6975a8ce1406eb5f57811bf8fb0eee2cceeca8fb[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:54:16 2019 +0100
+
+    padding added to full text pages
+
+[33mcommit a347dca1138bdd514be47b095480c1cd5d3ef597[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:48:19 2019 +0100
+
+    question number chnage p -> h4 and style created
+
+[33mcommit 1bc1541bf96073c46da461c22f44ffd99f02670b[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:29:00 2019 +0100
+
+      section element text centered
+
+[33mcommit 0864076b679969ddd48c004eb2f62968bec9baaa[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:22:45 2019 +0100
+
+    slider menu centered
+
+[33mcommit 8005b0ca0e1e09dd35c2cc38278e268aba494336[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 15 10:20:59 2019 +0100
+
+    continuer boutton added and button style created
+
+[33mcommit 1068ff40b98238c90542707b59bc7ac42d2d17e5[m
+Author: Prince Youlou <you@example.com>
+Date:   Thu Mar 14 16:01:54 2019 +0100
+
+    answer class created and implemented
+
+[33mcommit d5cebcaacad4339f586f2aa5e30ef499c4b38781[m
+Author: Prince Youlou <you@example.com>
+Date:   Thu Mar 14 15:25:41 2019 +0100
+
+    Question html structure added
+
+[33mcommit 741709eea3e1abc95b9eeb3a81e0c7eead995547[m
+Author: Prince Youlou <you@example.com>
+Date:   Thu Mar 14 13:08:40 2019 +0100
+
+    README.md file created
+
+[33mcommit 1c861bd1c2a4f85a731750b4dd6d7bd7fead6349[m
+Author: Prince Youlou <you@example.com>
+Date:   Wed Mar 13 18:51:19 2019 +0100
+
+    yes
+
+[33mcommit af4ee8e7d41f80ca2bfcaa431ce5f4fbc1b9455f[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 12 16:42:47 2019 +0100
+
+    CSS class created to implement the design of the slider
+
+[33mcommit fd66bf977be89993a216eb8fb70bc8c7a395bd27[m
+Author: Prince Youlou <you@example.com>
+Date:   Tue Mar 12 16:39:05 2019 +0100
+
+    html slider structure created
+
+[33mcommit 7fd6fc60d2716f5fbf278e72684dbc20aac1f0fa[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:47:04 2019 +0100
+
+    fix footer buton into rest of files
+
+[33mcommit 12ac96e0dc5881c3a1694b432be74b3a747f89fc[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:40:17 2019 +0100
+
+    fix recette click and add link
+
+[33mcommit c635cbc2904f580bdf71fbbff32055cb0fe1e9b9[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:38:22 2019 +0100
+
+    fix haricot click
+
+[33mcommit 5c631cb886c5ce1d2e77490b42ffc477a4fa72ae[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:37:33 2019 +0100
+
+    fix quiz click
+
+[33mcommit e5997ccce78e4c6d4cbf6186d2d86d9d41491758[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:36:39 2019 +0100
+
+    fix production click
+
+[33mcommit 8042c1b241176c1fd0dfc49dd7924cc5d5c0ae07[m
+Author: ricken07 <ricken.bazolo@gmail.com>
+Date:   Sat Mar 9 18:35:39 2019 +0100
+
+    fix portrait click
+
+[33mcommit 0d0cc151a7e8351403d8e3191738eee34e07b3e5[m
+Author: Prince Youlou <princeyoulou@gmail.com>
+Date:   Fri Mar 8 17:08:18 2019 +0100
+
+    README file created
+
+[33mcommit 0f1c059e557789d6e00888976b8ac429b1f28f72[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 16:09:15 2019 +0100
+
+    /
+
+[33mcommit 5ac71b17aa3055e711e8c3b90fbbc3f160b9bc5c[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 16:02:49 2019 +0100
+
+    link style updated
+
+[33mcommit d2a8d3392fe83e6e42ac655c65a02d9ccdacf6ed[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 16:01:29 2019 +0100
+
+    Quiz page created
+
+[33mcommit adb470f3adb590018edaada182b51d8a10536a0a[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 15:50:45 2019 +0100
+
+    - Page title modified
+
+[33mcommit f1b07c0af3f973213b916a93d4aead5bc78c310e[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 15:49:18 2019 +0100
+
+    link added
+
+[33mcommit 432ab4a611f4fd11958814a121bc2b1454c6e8d1[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 15:47:44 2019 +0100
+
+    html structure created
+
+[33mcommit 7d194853204ca25c0bbea8803d2d48a3e3f0872a[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 15:46:24 2019 +0100
+
+    css style created for portrait page with details
+
+[33mcommit 11a414a685ad934fa9c5698fa89379d325a16619[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 14:10:35 2019 +0100
+
+    - default portrait page created
+
+[33mcommit d63755f48c425ec19c83db20b845f1b1b13db71e[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 14:08:52 2019 +0100
+
+    - Page tilte changed
+
+[33mcommit 93128f47ab7347808ebcbf76dce3be4e4baa9a00[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 14:06:36 2019 +0100
+
+    css class created
+
+[33mcommit 9c72b07d69f754e612067d72aee243c70527d188[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 14:04:17 2019 +0100
+
+    missing link added and class added
+
+[33mcommit 4931287124bc8284ae53918d88b202261799a068[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 14:03:35 2019 +0100
+
+    - portraits pages created
+    - imags added to img folder
+
+[33mcommit 2054a36e6976c94039e5cd501277c55521fee77f[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 13:27:11 2019 +0100
+
+    - création de la page cycle de production
+
+[33mcommit 04452753e29ee718b53ce619aeb85bc80ec967ad[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 12:50:16 2019 +0100
+
+    - menu element title modified Cycle Pro -> Production
+
+[33mcommit 9b343a3699a284ebf0ce4d406a97733339248b66[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 12:48:17 2019 +0100
+
+    - images caption class created
+    - h4 class modified
+
+[33mcommit 0f6b178eca79383a7bf9e75b38cd541c2a18baf1[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 12:46:57 2019 +0100
+
+    - text and images added
+    - css class subtitle used to caption images titles
+
+[33mcommit e0d13329f613278df31b07926f3191bb6984305c[m
+Author: Prince Youlou <you@example.com>
+Date:   Fri Mar 8 12:39:47 2019 +0100
+
+    - Haricot page created
+    - haricot page title changed
+
+[33mcommit 000f72755a7986bd0c899120a0b5c34d3b4c4be1[m
+Author: Prince Youlou <you@example.com>
+Date:   Thu Mar 7 11:08:12 2019 +0100
+
+    Bottom nav item color set to gray
