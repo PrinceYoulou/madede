@@ -5,8 +5,6 @@ let cursor = 0;
 let questions = shuffle(data).slice(0, 10);
 let recap = [];
 
-console.log("SCORE " + localStorage.getItem("score"))
-
 buildQuestions(questions[cursor]);
 function shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
@@ -50,7 +48,6 @@ function reBuildUi() {
             $(".contentQuiz").append('<ul class="list-group list-group-flush content-suggestions"></ul>');
             buildQuestions(questions[cursor]);
         } else {
-
             clearInterval(interval);
             if (parseInt(localStorage.getItem("score")) === NaN
                 || typeof (parseInt(localStorage.getItem("score"))) == NaN) {
@@ -60,21 +57,6 @@ function reBuildUi() {
             }
             $(".content-action").append('<button class="restart btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">rejouer</button>');
             $(".content-action").append('<button class="recap btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">recapitulatif</button>');
-
-
-            //  $("body").append("<button class='share'>share</button>")
-            let pseudo = localStorage.getItem("pseudo");
-            if (pseudo === "" || typeof (pseudo) === undefined || pseudo == undefined || pseudo == null) {
-                // $("body").append("<input type='text' class='pseudo' placeholder='entrez votre pseudo'/> <button class='savePseudo'>enregistrer</button>");
-            } else {
-                console.log("NONE")
-                // $.post("http://localhost:8022/", { pseudo: pseudo, score: score, totalscore: parseInt(localStorage.getItem("score")) });
-            }
-
-            //    $(".savePseudo").click(() => {
-            //localStorage.setItem("pseudo", $(".pseudo").val());
-            //$.post("http://localhost:8022/", { pseudo: $(".pseudo").val(), score: score });
-            //  });
 
             $(".recap").click(() => {
                 console.log("RECAP");
@@ -108,25 +90,16 @@ function reBuildUi() {
 
             });
 
-            /*  $(".share").click((e) => {
-                FB.ui({
-                  method: 'share',
-                  href: 'https://developers.facebook.com/docs/',
-                }, function (response) { })
-              })*/
-
             $(".restart").click((e) => {
                 recap = [];
                 $(".recapContent").remove();
                 $(".container-questions").show();
                 $(".content-suggestions").remove();
                 $(".contentQuiz").append('<ul class="list-group list-group-flush content-suggestions"></ul>');
-
                 timer = 15;
                 score = 0;
                 cursor = 0;
                 questions = shuffle(data).slice(0, 10);
-
                 $(".score").text(score);
                 buildQuestions(questions[cursor]);
 
