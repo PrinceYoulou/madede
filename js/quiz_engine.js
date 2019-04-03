@@ -19,7 +19,7 @@ function buildQuestions(data) {
     $(".questionTitle").text(data.text);
     $(".questionProgress").text(`Question ${cursor + 1}`);
     data.answers.forEach((element, index) => {
-        $(".content-suggestions").append(`<li class="list-group-item suggestion${index + 1}" data-correct="${element.correct}" data-comment="${element.comment}">${element.text}</li>`);
+        $(".content-suggestions").append(`<li class="list-group-item suggestiontitle suggestion${index + 1}" data-correct="${element.correct}" data-comment="${element.comment}">${element.text}</li>`);
         $(`.suggestion${index + 1}`).click(function (e) {
             let correct = $(this).attr("data-correct");
             if (correct.indexOf("true") == 0) {
@@ -49,6 +49,10 @@ function reBuildUi() {
             buildQuestions(questions[cursor]);
         } else {
             clearInterval(interval);
+            console.log("EACH")
+            $(".suggestiontitle").each(function () {
+                $(this).addClass("disabled");
+            })
             if (parseInt(localStorage.getItem("score")) === NaN
                 || typeof (parseInt(localStorage.getItem("score"))) == NaN) {
                 localStorage.setItem("score", score);
