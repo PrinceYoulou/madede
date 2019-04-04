@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="css/material.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
@@ -44,20 +45,47 @@
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
     </nav>
+
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="navbar navbar_ fixed-top navbar-light d-none d-lg-block">
+      <!-- <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a> -->
+      <ul class="nav nav-tabs nav-justified">
+          <span class="mdl-logo"><img src="img/logo.png" alt=""></span>
+              <a class="navbar-brand" href="#">Madédé</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Recette</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="haricot.html">Haricot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz_start.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cycle.html">Production</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portrait.html">Portrait</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">À propos</a>
+        </li>
+    </ul>
+    </nav>
   </div>
-  <div class="text_div">
+  <div class="container_fluid text_div">
 
     <!-- <div class="page-content mdl-container"> -->
 
-    <div id="_main" class="mdl-grid container">
+    <div id="_main" class="mdl-grid">
       <section>
         <h4>Pourquoi consommer le haricot </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum, lectus commodo mattis ultrices,
           ipsum felis dignissim tellus, id eleifend nisl enim sed nisi.
         </p>
-        <img src="img/main.jpg" alt="">
-        <span class="subtitle">Nullam magna ante, eleifend nec risus eu, lobortis imperdiet orci.</span>
+        <img class="img-full img-fluid" src="img/main.jpg" alt="">
+        <span class="subtitle align_center">Nullam magna ante, eleifend nec risus eu, lobortis imperdiet orci.</span>
         <h4>Donec venenatis faucibus varius</h4>
         <p>
           Nullam magna ante, eleifend nec risus eu, lobortis imperdiet orci. In hac habitasse platea dictumst. Integer
@@ -66,7 +94,7 @@
           hendrerit sodales magna nec condimentum. Integer feugiat dapibus ligula, in ultrices turpis vehicula id.
           Praesent pulvinar urna in rhoncus accumsan.
         </p>
-        <img src="img/main.jpg" alt="">
+        <img class="img-full img-fluid" src="img/main.jpg" alt="">
         <h4>Nulla in urna magna</h4>
         <p>
           Duis sapien risus, porttitor at dictum eget, blandit nec ipsum. Mauris mattis urna eu sem placerat,
@@ -83,7 +111,7 @@
 
     </div>
 
-    <div class="nav-top">
+    <div class="nav-top d-block d-md-none">
       <nav class="navbar navbar_ fixed-bottom navbar-light">
         <table>
           <tr>

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="css/material.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
@@ -44,16 +45,49 @@
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
     </nav>
+
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="navbar navbar_ fixed-top navbar-light d-none d-lg-block">
+      <!-- <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a> -->
+      <ul class="nav nav-tabs nav-justified">
+          <span class="mdl-logo"><img src="img/logo.png" alt=""></span>
+              <a class="navbar-brand" href="#">Madédé</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Recette</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="haricot.html">Haricot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz_start.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cycle.html">Production</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="portrait.html">Portrait</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">À propos</a>
+        </li>
+    </ul>
+    </nav>
   </div>
   <div>
 
     <!-- <div class="page-content mdl-container"> -->
+    <div class="d-block d-md-none">
+      <div id="_main" class="mdl-grid container">
 
-    <div id="_main" class="mdl-grid container">
+      </div>
+    </div>
+    <div class="container_fluid d-none d-lg-block" style="padding: 50px;">
+      <div id="_mainDesktop" class="row">
 
+      </div>
     </div>
 
-    <div class="nav-top">
+    <div class="nav-top d-block d-md-none">
       <nav class="navbar navbar_ fixed-bottom navbar-light">
         <table>
           <tr>
@@ -130,6 +164,31 @@
         //see data in data.js
         data.forEach(element => {
           buildCard(element);
+        });
+
+      })
+
+
+      $(document).ready(function () {
+
+        function buildCardDesktop(portrait) {
+
+            let templateDesktop = `<div class="col-3">
+            <div class="card img-fluid">
+              <img class="card-img-top" src='${portrait.pathToImage}'>
+                <div class="card-footer">
+                  <span class="card-title"><a class="name" href="portrait_luc.html#${portrait.id}">${portrait.firstName} ${portrait.lastName}</a></span>
+                </div>
+            </div>
+            </div>
+        `;
+
+          $("#_mainDesktop").append(templateDesktop);
+
+        }
+        //see data in data.js
+        data.forEach(element => {
+          buildCardDesktop(element);
         });
 
       })

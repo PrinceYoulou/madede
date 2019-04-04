@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="css/material.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
@@ -44,9 +45,36 @@
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
     </nav>
+
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="navbar navbar_ fixed-top navbar-light d-none d-lg-block">
+      <!-- <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a> -->
+      <ul class="nav nav-tabs nav-justified">
+          <span class="mdl-logo"><img src="img/logo.png" alt=""></span>
+              <a class="navbar-brand" href="#">Madédé</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Recette</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="haricot.html">Haricot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="quiz_start.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cycle.html">Production</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portrait.html">Portrait</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">À propos</a>
+        </li>
+    </ul>
+    </nav>
   </div>
 
-  <div class="text_div">
+  <div class="text_div" style="padding-top: 50px;">
 
     <!-- <div class="page-content mdl-container"> -->
 
@@ -68,7 +96,7 @@
 
     </div>
 
-    <div class="nav-top">
+    <div class="nav-top d-block d-md-none">
       <nav class="navbar navbar_ fixed-bottom navbar-light">
         <table>
           <tr>

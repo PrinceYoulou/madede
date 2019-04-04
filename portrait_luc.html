@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/desktop.css">
   <link rel="stylesheet" href="css/material.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
@@ -44,16 +45,50 @@
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
     </nav>
+
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="navbar navbar_ fixed-top navbar-light d-none d-lg-block">
+      <!-- <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a> -->
+      <ul class="nav nav-tabs nav-justified">
+          <span class="mdl-logo"><img src="img/logo.png" alt=""></span>
+              <a class="navbar-brand" href="#">Madédé</a>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Recette</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="haricot.html">Haricot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz_start.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cycle.html">Production</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="portrait.html">Portrait</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">À propos</a>
+        </li>
+    </ul>
+    </nav>
   </div>
   <div>
 
     <!-- <div class="page-content mdl-container"> -->
+    <div class="d-block d-md-none">
+      <div id="_main" class="mdl-grid container">
 
-    <div id="_main" class="mdl-grid container">
+      </div>
+    </div>
+    <div class="container_fluid d-none d-lg-block">
+      <div id="_mainDesktop">
 
+      </div>
     </div>
 
-    <div class="nav-top">
+
+    <div class="nav-top d-block d-md-none">
       <nav class="navbar navbar_ fixed-bottom navbar-light">
         <table>
           <tr>
@@ -132,6 +167,39 @@
 
         data.forEach(element => {
           if (element.id === parseInt(portraitIndex)) {
+            buildCard(element);
+          }
+
+        });
+      });
+
+      $(document).ready(function () {
+        let portraitIndexDesktop = window.location.hash.substring(1);
+
+        function buildCard(portrait) {
+          let templateDesktop = `<div class="card card-portrait"><div class="row">
+          <div class="col-4">
+            <img class="card-img-top img-thumbnail" src="${portrait.pathToImage}" alt="">
+            </div>
+            <div class="col-8 card-body">
+            <div class="card-title name">${portrait.firstName} ${portrait.lastName}</div>
+            <div class="card-text">
+            <p>${portrait.fonction}</p>
+            <p>${portrait.description}</p>
+            <p>
+              ${portrait.adresse}<br>
+              ${portrait.localite} <br>
+              ${portrait.telephone}
+            </p>
+            </div>
+            </div>
+            <div>
+          </div>`;
+          $("#_mainDesktop").append(templateDesktop);
+        }
+
+        data.forEach(element => {
+          if (element.id === parseInt(portraitIndexDesktop)) {
             buildCard(element);
           }
 
