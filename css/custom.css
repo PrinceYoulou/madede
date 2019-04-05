@@ -102,6 +102,7 @@ a:hover {
 .subtitle {
     font-size: 12px;
     font-style: italic;
+    text-align: center;
   }
 h4 {
 	-moz-osx-font-smoothing: grayscale;
