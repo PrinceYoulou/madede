@@ -17,10 +17,25 @@
   <link rel="stylesheet" href="css/material.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
+
   <!-- Material Design icon font -->
   <link rel="stylesheet" href="css/family=Material+Icons.css">
 
   <title>Madédé :: Quiz :: Testez vos connaissances sur le haricot </title>
+
+  <style>
+    #time-container {
+      margin: 20px;
+      width: 70px;
+      height: 70px;
+      position: relative;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 
 <body>
@@ -39,7 +54,7 @@
           <a href="partager.html" class="menu">Partager</a>
         </li>
         <li class="mdl-menu__item">
-          <a class="menu" href="aide.html">Aide</a>
+          <a href="aide.html">Aide</a>
         </li>
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
@@ -52,102 +67,96 @@
 
     <div id="_main" class="mdl-grid container">
 
-      <div class="slider_quiz">
-        <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="50" tabindex="0">
-      </div>
-      <section class="section_question">
-        <h4>Question 5/10</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          At quo dolore maxime voluptatum natus in saepe. Deserunt
-          ipsa illum sapiente beatae, sed eos obcaecati cupiditate
-          voluptates, amet vitae impedit rem ?</p>
-      </section>
-      <div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Cras justo odio
-          </button><br>
+      <div class="recapContent"></div>
+
+      <div class="container container-questions">
+        <div class="row">
+          <div class="col-xs-12" style="width: 100%;margin: 5%;">
+            TIMER :<span class="timer"
+              style="background-color: #003718;height:200px;margin: 5%;width: 100px;color: white;padding: 5%;border-radius: 100%;font-weight: bold;">15</span>
+            SCORE <span class="score" style="color:#003718;margin: 5%;">0</span>
+            <br />
+          </div>
         </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Dapibus ac facilisis in
-          </button><br>
-        </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Morbi leo risus
-          </button><br>
-        </div>
-        <div class="answer">
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect answer-button">
-            Porta ac consectetur ac ipsa illum sapiente beatae, sed eos obcaecati cupiditate
-          </button><br>
+
+        <div class="row" style="margin-top: 5%;">
+          <div class="col-xs-12 contentQuiz" style="padding-left: 15%;padding-right: 15%;">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title questionProgress" style="color:#003718;"></h5>
+                <p class="card-text questionTitle">
+                </p>
+              </div>
+              <ul class="list-group list-group-flush content-suggestions">
+
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="row" style="width: 100%;margin: 5%">
+        <div class="col-xs-12 content-action">
 
-      <div class="continuer">
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect start">
-          CONTINUER
-        </button><br>
+        </div>
+      </div>
+      <div class="nav-top">
+        <nav class="navbar navbar_ fixed-bottom navbar-light">
+          <table>
+            <tr>
+              <td class="td_footer menu_On">
+                <a href="index.html">
+                  <i class="material-icons">slow_motion_video</i><br>
+                  <span>
+                    Recette
+                  </span>
+                </a>
+              </td>
+              <td class="td_footer">
+                <a href="haricot.html">
+                  <i class="material-icons">video_label</i><br>
+                  <span>
+                    Haricot
+                  </span>
+                </a>
+              </td>
+              <td class="td_footer">
+                <a href="quiz_start.html">
+                  <i class="material-icons">slow_motion_video</i><br>
+                  <span>
+                    Quiz
+                  </span>
+                </a>
+              </td>
+              <td class="td_footer">
+                <a href="cycle.html">
+                  <i class="material-icons">video_label</i><br>
+                  <span>
+                    Production
+                  </span>
+                </a>
+              </td>
+              <td class="td_footer">
+                <a href="portrait.html">
+                  <i class="material-icons">slow_motion_video</i><br>
+                  <span>
+                    Portrait
+                  </span>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </nav>
       </div>
 
-    </div>
+      <script src="js/material.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/progress.js"></script>
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/quiz_data.js"></script>
+      <script src="js/quiz_engine.js"></script>
 
-    <div class="nav-top">
-      <nav class="navbar navbar_ fixed-bottom navbar-light">
-        <table>
-          <tr>
-            <td class="td_footer menu_On">
-              <a href="index.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Recette
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="haricot.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Haricot
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="quiz_start.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Quiz
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="cycle.html">
-                <i class="material-icons">video_label</i><br>
-                <span>
-                  Production
-                </span>
-              </a>
-            </td>
-            <td class="td_footer">
-              <a href="portrait.html">
-                <i class="material-icons">slow_motion_video</i><br>
-                <span>
-                  Portrait
-                </span>
-              </a>
-            </td>
-          </tr>
-        </table>
-      </nav>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/material.min.js"></script>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
