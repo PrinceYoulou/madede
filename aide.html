@@ -50,6 +50,14 @@
     <!-- <div class="page-content mdl-container"> -->
 
     <div id="_main" class="mdl-grid container">
+      <section class="text-center" style="width: 100%">
+        <h3>Madédé <br> v1.0</h3>
+        <img src="img/logo2.png" style="width: 130px;" alt="">
+        <p>Applicatin dévéloppée par Fongwama</p>
+        <img src="img/fongwama.png" style="width: 200px;" alt="">
+        <p>Pour le PAM et partenaires </p>
+        <img src="img/pam.png" style="width: 300px;" alt="">
+      </section>
 
     </div>
 
@@ -108,35 +116,7 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/portrait_data.js"></script>
-    <script>
 
-      $(document).ready(function () {
-
-        function buildCard(portrait) {
-          let template = `<div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone mdl-cell--2-col-tablet">
-            <div class="demo-card-image mdl-card mdl-shadow--2dp " style='background:url(${portrait.pathToImage})'>
-              <div class="mdl-card__title mdl-card--expand"></div>
-              <div class="mdl-card__actions">
-                <span class="demo-card-image__filename"><a href="portrait_luc.html#${portrait.id}">${portrait.firstName} ${portrait.lastName}</a></span>
-              </div>
-          </div>
-          </div>
-      `;
-
-          $("#_main").append(template);
-
-        }
-        //see data in data.js
-        data.forEach(element => {
-          buildCard(element);
-        });
-
-      })
-
-
-
-    </script>
 </body>
 </body>
 
