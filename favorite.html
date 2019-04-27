@@ -125,9 +125,13 @@
                 }
                 // see data in recette_data.js
                 let data = JSON.parse(localStorage.getItem("local_recipe"));
-                data.forEach(element => {
-                    buildOtherRecipes(element);
-                });
+                if (data == null) {
+                    $('#_main').append("Aucun favorie n'a été trouvé")
+                } else {
+                    data.forEach(element => {
+                        buildOtherRecipes(element);
+                    });
+                }
             </script>
 </body>
 
