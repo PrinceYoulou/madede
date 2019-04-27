@@ -141,7 +141,7 @@
                         <div class="mdl-card__title mdl-card--expand"></div>
                         <div class="mdl-card__actions">
                             <span class="demo-card-image__filename"><a
-                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | <i class="material-icons addToFavorite">history</i>
+                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | <i class="material-icons addToFavorite">favorite_border</i>
                   <br></span>
                         </div>
                     </div>
@@ -151,19 +151,31 @@
             console.log("add recipe " + window.location.hash);
             let hash = parseInt(window.location.hash.substring(1));
             data.recipes.forEach(element => {
+              let state = true;
               if (element.id === hash) {
-                console.log("RECIPE FIND");
-                let localRecipe = [];
-                localRecipe.push(localStorage.getItem("local_recipe"));
-                localRecipe.forEach(element => {
-                  let comparator = JSON.parse(element);
-                  if (!(comparator.id === hash)) {
-                    localRecipe.push(element);
-                    localStorage.setItem("local_recipe", JSON.stringify(element));
-                    console.log("OK ...............");
+
+                let recipes = JSON.parse(localStorage.getItem("local_recipe"));
+                if (recipes == null) {
+                  console.log("IS NULL");
+                  recipes = []
+                };
+                recipes.forEach(current => {
+                  if (current.id == element.id) {
+                    state = false;
                   }
-                });
+                })
+                console.log(recipes.length)
+                if (state) {
+                  recipes.push(element);
+                  localStorage.setItem("local_recipe", JSON.stringify(recipes));
+
+                }
+                
+
+                console.log(recipes);
+
               }
+
             });
 
           })
