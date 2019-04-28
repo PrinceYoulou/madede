@@ -167,7 +167,9 @@
                 </div>`;
           $(".contentImage").append(template);
 
-          $(".addToFavorite").click(function () {
+          $(".addToFavorite").click(function (e) {
+            e.preventDefault();
+            console.log("ADD =============")
             let hash = parseInt(window.location.hash.substring(1));
             data.recipes.forEach(element => {
               let state = true;
@@ -185,10 +187,8 @@
                   recipes.push(element);
                   localStorage.setItem("local_recipe", JSON.stringify(recipes));
 
-                  $(".removeFavorite").show();
-                  console.log("ADD")
-
-                  $(".addToFavorite").hide();
+                  $(".removeFavorite").removeAttr("style");
+                  $(".addToFavorite").attr("style", "display:none");
                 }
               }
 
@@ -196,17 +196,18 @@
 
           })
           $(".removeFavorite").click(function () {
+            console.log("REMOVE ================")
+            e.preventDefault();
             if (localFavorite != null) {
               localFavorite.forEach((current, index) => {
                 let hash = parseInt(window.location.hash.substring(1));
                 if (current.id === hash) {
                   localFavorite.splice(index);
                   localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
-                  $(".addToFavorite").show();
+                  $(".addToFavorite").removeAttr("style");
 
-                  $(".removeFavorite").hide();
-                  console.log("REMOVE")
-
+                  $(".removeFavorite").attr("style","display:none");
+                
                 }
               });
             }
