@@ -139,18 +139,72 @@
       <script>
 
         function buildRecipe(recipe) {
+
+
+
+          // ============================================
+
+
+          let favoriteIcon = '<i class="material-icons addToFavorite">favorite_border</i>';
+
+          let localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
+          console.log(localFavorite);
+          if (localFavorite != null) {
+            console.log("TEST...");
+            let hash = parseInt(window.location.hash.substring(1));
+            localFavorite.forEach(current => {
+              if (current.id === hash) {
+                favoriteIcon = '<i class="material-icons removeFavorite">favorite</i>';
+              }
+            });
+          }
+
+
           let template = `<div>
                     <div class="demo-card-image mdl-card mdl-shadow--2dp"
                         style='background:url(${recipe.pathToImage})  center / cover !important'>
                         <div class="mdl-card__title mdl-card--expand"></div>
                         <div class="mdl-card__actions">
                             <span class="demo-card-image__filename"><a
-                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | <i class="material-icons addToFavorite">favorite_border</i>
+                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | ${favoriteIcon}
                   <br></span>
                         </div>
                     </div>
                 </div>`;
           $(".contentImage").append(template);
+
+          attachRemoveEvent(localFavorite);
+          attachAddEvent(localFavorite);
+
+
+        }
+
+        function attachRemoveEvent(localFavorite) {
+
+          $(".removeFavorite").click(function () {
+            if (localFavorite != null) {
+              localFavorite.forEach((current, index) => {
+                console.log("MY INDEX " + index);
+
+                let hash = parseInt(window.location.hash.substring(1));
+                if (current.id === hash) {
+                  localFavorite.splice(index);
+                  console.log(localFavorite);
+                  localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
+                  $(".removeFavorite").html(`<i class="material-icons addToFavorite">favorite_border</i>`);
+                  console.log("ATTACH ADD");
+                  attachAddEvent(localFavorite);
+
+                }
+
+
+              });
+            }
+          });
+        }
+
+        function attachAddEvent(localFavorite) {
+        
           $(".addToFavorite").click(function () {
             console.log("add recipe " + window.location.hash);
             let hash = parseInt(window.location.hash.substring(1));
@@ -172,6 +226,9 @@
                 if (state) {
                   recipes.push(element);
                   localStorage.setItem("local_recipe", JSON.stringify(recipes));
+                  $(".addToFavorite").html(`<i class="material-icons removeFavorite">favorite</i>`);
+                  console.log("ATTACH REMOVE");
+                  attachRemoveEvent(localFavorite)
 
                 }
 
@@ -184,8 +241,6 @@
 
           })
         }
-
-
         function buildIngredient(ingredient) {
           let template = `  <li class="list-group-item d-flex justify-content-between align-items-center">
               ${ingredient}
