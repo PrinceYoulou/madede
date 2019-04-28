@@ -140,25 +140,19 @@
 
         function buildRecipe(recipe) {
 
-
-
-          // ============================================
-
-
-          let favoriteIcon = '<i class="material-icons addToFavorite">favorite_border</i>';
-
+          let addIcon = `<i class="material-icons addToFavorite">favorite_border</i>`;
+          let deleteIcon = `<i class="material-icons removeFavorite" style="display:none">favorite</i>`;
           let localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
-          console.log(localFavorite);
+
           if (localFavorite != null) {
-            console.log("TEST...");
             let hash = parseInt(window.location.hash.substring(1));
             localFavorite.forEach(current => {
               if (current.id === hash) {
-                favoriteIcon = '<i class="material-icons removeFavorite">favorite</i>';
+                addIcon = `<i class="material-icons addToFavorite" style="display:none">favorite_border</i>`;
+                deleteIcon = `<i class="material-icons removeFavorite">favorite</i>`;
               }
             });
           }
-
 
           let template = `<div>
                     <div class="demo-card-image mdl-card mdl-shadow--2dp"
@@ -166,55 +160,20 @@
                         <div class="mdl-card__title mdl-card--expand"></div>
                         <div class="mdl-card__actions">
                             <span class="demo-card-image__filename"><a
-                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | ${favoriteIcon}
+                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | ${addIcon} ${deleteIcon}
                   <br></span>
                         </div>
                     </div>
                 </div>`;
           $(".contentImage").append(template);
 
-          attachRemoveEvent(localFavorite);
-          attachAddEvent(localFavorite);
-
-
-        }
-
-        function attachRemoveEvent(localFavorite) {
-
-          $(".removeFavorite").click(function () {
-            if (localFavorite != null) {
-              localFavorite.forEach((current, index) => {
-                console.log("MY INDEX " + index);
-
-                let hash = parseInt(window.location.hash.substring(1));
-                if (current.id === hash) {
-                  localFavorite.splice(index);
-                  console.log(localFavorite);
-                  localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
-                  $(".removeFavorite").html(`<i class="material-icons addToFavorite">favorite_border</i>`);
-                  console.log("ATTACH ADD");
-                  attachAddEvent(localFavorite);
-
-                }
-
-
-              });
-            }
-          });
-        }
-
-        function attachAddEvent(localFavorite) {
-        
           $(".addToFavorite").click(function () {
-            console.log("add recipe " + window.location.hash);
             let hash = parseInt(window.location.hash.substring(1));
             data.recipes.forEach(element => {
               let state = true;
               if (element.id === hash) {
-
                 let recipes = JSON.parse(localStorage.getItem("local_recipe"));
                 if (recipes == null) {
-                  console.log("IS NULL");
                   recipes = []
                 };
                 recipes.forEach(current => {
@@ -222,25 +181,40 @@
                     state = false;
                   }
                 })
-                console.log(recipes.length)
                 if (state) {
                   recipes.push(element);
                   localStorage.setItem("local_recipe", JSON.stringify(recipes));
-                  $(".addToFavorite").html(`<i class="material-icons removeFavorite">favorite</i>`);
-                  console.log("ATTACH REMOVE");
-                  attachRemoveEvent(localFavorite)
 
+                  $(".removeFavorite").show();
+                  console.log("ADD")
+
+                  $(".addToFavorite").hide();
                 }
-
-
-                console.log(recipes);
-
               }
 
             });
 
           })
+          $(".removeFavorite").click(function () {
+            if (localFavorite != null) {
+              localFavorite.forEach((current, index) => {
+                let hash = parseInt(window.location.hash.substring(1));
+                if (current.id === hash) {
+                  localFavorite.splice(index);
+                  localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
+                  $(".addToFavorite").show();
+
+                  $(".removeFavorite").hide();
+                  console.log("REMOVE")
+
+                }
+              });
+            }
+          });
+
+
         }
+
         function buildIngredient(ingredient) {
           let template = `  <li class="list-group-item d-flex justify-content-between align-items-center">
               ${ingredient}
