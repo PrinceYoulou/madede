@@ -168,8 +168,8 @@
           $(".contentImage").append(template);
 
           $(".addToFavorite").click(function (e) {
-            e.preventDefault();
             console.log("ADD =============")
+            localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
             let hash = parseInt(window.location.hash.substring(1));
             data.recipes.forEach(element => {
               let state = true;
@@ -197,17 +197,22 @@
           })
           $(".removeFavorite").click(function (e) {
             console.log("REMOVE ============")
-            e.preventDefault();
-            if (localFavorite != null) {
+
+            localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
+            if (localFavorite != null || localFavorite.length != 0) {
               localFavorite.forEach((current, index) => {
                 let hash = parseInt(window.location.hash.substring(1));
+                console.log(current);
                 if (current.id === hash) {
-                  localFavorite.splice(index);
+                  localFavorite = localFavorite.filter((m, itemIndex) => {
+                    return itemIndex !== index;
+                  });
+                  console.log(localFavorite);
                   localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
+                  $(".removeFavorite").attr("style", "display:none");
+
                   $(".addToFavorite").removeAttr("style");
 
-                  $(".removeFavorite").attr("style","display:none");
-                
                 }
               });
             }
