@@ -195,8 +195,8 @@
             });
 
           })
-          $(".removeFavorite").click(function () {
-            console.log("REMOVE ================")
+          $(".removeFavorite").click(function (e) {
+            console.log("REMOVE ============")
             e.preventDefault();
             if (localFavorite != null) {
               localFavorite.forEach((current, index) => {
