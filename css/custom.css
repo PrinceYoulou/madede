@@ -157,6 +157,48 @@ h4 {
 .text_div {
   padding: 0px 10px;
 }
+
+
+.wrapper_text{
+  padding: 0px 10px;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .text_div{
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .wrapper_text{
+    padding: 0px 10px;
+  }
+
+  .wrapper{
+    padding-top:20px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .text_div{
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .wrapper_text{
+    padding: 10px 10px;
+  }
+
+  .wrapper{
+    padding-top:50px;
+
+  }
+}
+
+
+
+
+
 .recette_h3 {
 	font-size: 18px !important;
 	text-align: left !important;
