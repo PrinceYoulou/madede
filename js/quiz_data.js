@@ -1,163 +1,163 @@
 const data = [
     {
-        "text": "Que devez-vous faire quand vous pensez avoir le paludisme ?",
+        "text": "Combien de variétés de haricots existe-t-il dans le monde ? ",
         "time": 15,
         "answers": [
             {
-                "text": "Aller consulter un médecin",
-                "comment": "Vous avez raison. Dès que vous pensez avoir un palu, allez rapidement consulter un médecin.",
+                "text": "14000",
+                "comment": "Il existe 14000 variétés de haricots répertoriées dans le monde.",
                 "correct": true,
             },
             {
-                "text": "Prendre des médicaments sans consulter un médecin avant",
-                "comment": "Seul un médecin peut diagnostiquer avec certitude le paludisme et prescrire les bons médicaments à prendre.",
+                "text": "1400",
+                "comment": "Il existe 14000 variétés de haricots répertoriées dans le monde.",
                 "correct": false,
             },
             {
-                "text": "Attendre que ca passe avec le temps",
-                "comment": "On peut mourir du paludisme si celui-ci n'est pas soigné à temps. Il faut allez consultez un médecin dès l'apparition de symptômes.",
+                "text": "2000",
+                "comment": "Il existe 14000 variétés de haricots répertoriées dans le monde",
                 "correct": false,
             },
             {
-                "text": "Aller consulter un guérisseur",
-                "comment": "Va consulter un médecin. Il est le seul à pouvoir diagnostique correctement un paludisme.",
+                "text": "200",
+                "comment": "Il existe 14000 variétés de haricots répertoriées dans le monde",
                 "correct": false,
             },
         ]
     },
     {
-        "text": "Quels sont les symptômes possibles du paludisme ?",
+        "text": "A quelle famille de plante appartient le haricot ?",
         "time": 15,
         "answers": [
             {
-                "text": "Chute des cheveux",
-                "comment": "Les symptômes possible du paludisme sont : fièvre, vomissements, fatigue, diarrhée ou maux de tête.",
+                "text": "Les Filicophyta",
+                "comment": "La fougère est un Filicophyta, mais pas le haricot qui est un Fabaceae.",
                 "correct": false,
             },
             {
-                "text": "Fièvre, vomissements, maux de tête",
-                "comment": "Allez consulter un médecin dès que vous ressentez ces symptômes. D'autres symptômes peuvent être diarrhées, fatigue.",
+                "text": "Les Fabaceae",
+                "comment": "Le haricot est bien une espèce de plantes de la famille des Fabaceae, du genre Phaseolus.",
                 "correct": true,
             },
             {
-                "text": "Douleur aux orteils",
-                "comment": "Les symptômes possible du paludisme sont : fièvre, vomissements, fatigue, diarrhée ou maux de tête.",
+                "text": "Les Lauraceae",
+                "comment": "L’avocat est un Lauraceae, mais pas le haricot qui est un Fabaceae.",
+                "correct": false,
+            },
+            {
+                "text": "Les Cucurbitaceae ",
+                "comment": "La courge est un Cucurbitaceae, mais pas le haricot qui est un Fabaceae.",
                 "correct": false,
             },
         ]
     },
     {
-        "text": "Quel insecte transmet le paludisme ?",
+        "text": "Que sont les haricots secs ?",
         "time": 15,
         "answers": [
             {
-                "text": "La guêpe",
-                "comment": "C'est le moustique qui transmet le paludisme.",
+                "text": "Des légumes",
+                "comment": " Les légumes sont des plantes qui peuvent se manger. Les graines, comme le haricot sec, n’en font pas partie",
                 "correct": false,
             },
             {
-                "text": "La mouche tsé-tsé",
-                "comment": "C'est le moustique qui transmet le paludisme.",
-                "correct": false,
-            },
-            {
-                "text": "Le moustique",
-                "comment": "On dit que le moustique est le <em>vecteur</em> du paludisme.",
-                "correct": true,
-            },
-            {
-                "text": "Le fourou",
-                "comment": "C'est le moustique qui transmet le paludisme.",
+                "text": "Des légumineuses",
+                "comment": "Les légumineuses sont des légumes secs, autrement dit des graines, comme le haricot sec.",
                 "correct": false,
             },
         ]
     },
     {
-        "text": "Comment pouvez-vous vous protéger efficacement du paludisme pendant votre sommeil ?",
+        "text": "Combien d’acides aminés essentiels à l’organisme trouve-t-on dans le haricot ?",
         "time": 15,
         "answers": [
             {
-                "text": "En dormant sous une moustiquaire imprégnée d’insecticide",
-                "comment": "La moustiquaire imprégnée d’insecticide est la meilleure protection. Veillez à ce qu'elle soit sans trou et bien fixée autour du matelas.",
+                "text": "9",
+                "comment": "Le haricot est composé de 9 acides aminés essentiels à l’organisme",
                 "correct": true,
             },
             {
-                "text": "En prenant des médicaments contre le paludisme",
-                "comment": "Prendre des médicaments pour se protéger du paludisme n'est pas une solution à long terme. La moustiquaire imprégnée d’insecticide est la solution la plus efficace et la plus économique.",
+                "text": "3",
+                "comment": "Le haricot est composé de 9 acides aminés essentiels à l’organisme",
                 "correct": false,
             },
             {
-                "text": "Avec un appareil qui produit des ultrasons",
-                "comment": "La moustiquaire imprégnée d’insecticide est la solution la plus efficace et la plus économique.",
+                "text": "5",
+                "comment": "Le haricot est composé de 9 acides aminés essentiels à l’organisme",
                 "correct": false,
             },
             {
-                "text": "Avec une tapette à mouche",
-                "comment": "La moustiquaire imprégnée d’insecticide est la solution la plus efficace et la plus économique.",
+                "text": "7",
+                "comment": "Le haricot est composé de 9 acides aminés essentiels à l’organisme",
                 "correct": false,
             },
         ]
     },
     {
-        "text": "En anglais, comment appelle-t-on le paludisme ?",
+        "text": "Combien de producteurs et productrices sont soutenues par le Projet d’Appui aux Petits Producteurs de Haricots ?",
         "time": 15,
         "answers": [
             {
-                "text": "Maludisme",
-                "comment": "En anglais, paludisme est appelé malaria.",
+                "text": "80",
+                "comment": "Au total, ce sont 200 producteurs et productrices répartis dans les districts de Boko Songho et Loudima dans le département de la Bouenza qui sont soutenus par le projet.",
                 "correct": false,
             },
             {
-                "text": "Palu",
-                "comment": "<em>Palu</em> est l’abréviation française de paludisme. En anglais, paludisme est appelé malaria.",
+                "text": "100",
+                "comment": "Au total, ce sont 200 producteurs et productrices répartis dans les districts de Boko Songho et Loudima dans le département de la Bouenza qui sont soutenus par le projet.",
                 "correct": false,
             },
             {
-                "text": "Palaria",
-                "comment": "En anglais, paludisme est appelé malaria.",
+                "text": "150",
+                "comment": "Au total, ce sont 200 producteurs et productrices répartis dans les districts de Boko Songho et Loudima dans le département de la Bouenza qui sont soutenus par le projet.",
                 "correct": false,
             },
             {
-                "text": "Malaria",
-                "comment": "Vous avez trouvé. Félicitation !",
+                "text": "200",
+                "comment":"Au total, ce sont 200 producteurs et productrices répartis dans les districts de Boko Songho et Loudima dans le département de la Bouenza qui sont soutenus par le projet",
                 "correct": true,
             },
         ]
     },
     {
-        "text": "Quel est le nom du moustique qui transmet le paludisme ?",
+        "text": "Lors de la production, comment s’appelle l’étape de séparation des graines de haricots de ses impuretés ?",
         "time": 15,
         "answers": [
             {
-                "text": "Paluphèle",
-                "comment": "Le moustique qui transmet le paludisme s'appelle anophèle.",
+                "text": "La récolte",
+                "comment": "La récolte est l’action de cueillir les haricots. La séparation des graines de haricots de ses impuretés s’appelle le vannage.",
                 "correct": false,
             },
             {
-                "text": "Mousticus malarius",
-                "comment": "Le moustique qui transmet le paludisme s'appelle anophèle.",
-                "correct": false,
-            },
-            {
-                "text": "Anophèle",
-                "comment": "Félicitation ! Cette question était difficile.",
+                "text": "Le vannage",
+                "comment": "Le vannage",
                 "correct": true,
+            },
+            {
+                "text": "Le labour ou labourage",
+                "comment": "Le labour ou labourage est l’action de retourner la terre avant de semer. La séparation des graines de haricots de ses impuretés s’appelle le vannage.",
+                "correct": false,
             },
         ]
     },
     {
-        "text": "Est-ce que tous les moustiques anophèles transmettent le paludisme ?",
+        "text": "Dans le cadre du Projet d’Appui aux Petits Producteurs de Haricot, un fertilisant naturel est utilisé, lequel ?",
         "time": 15,
         "answers": [
             {
-                "text": "Oui",
-                "comment": "Seuls les anophèles femelles transmettent le paludisme.",
+                "text": "Le Mukuna",
+                "comment": "Le Mukuna est une légumineuse capable de fixer l’azote de l’air au sol, et qui permet de réduire le temps de jachère.",
+                "correct": true,
+            },
+            {
+                "text": "La cendre de bois",
+                "comment": "Le Mukuna est une légumineuse capable de fixer l’azote de l’air au sol, et qui permet de réduire le temps de jachère",
                 "correct": false,
             },
             {
-                "text": "Non",
-                "comment": "Vous avez raison. Seuls les anophèles femelles transmettent le paludisme.",
-                "correct": true,
+                "text": "Le marc de café",
+                "comment": "Le Mukuna est une légumineuse capable de fixer l’azote de l’air au sol, et qui permet de réduire le temps de jachère",
+                "correct": false,
             },
         ]
     },
@@ -183,6 +183,58 @@ const data = [
         ]
     },
     {
+        "text": "Quelle est la consommation moyenne par an de haricots au Congo / en Afrique / dans le monde ?",
+        "time": 15,
+        "answers": [
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": false,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": false,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": true,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": true,
+            },
+        ]
+    },
+    {
+        "text": "Quelles régions au Congo produisent le haricot ?",
+        "time": 15,
+        "answers": [
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": false,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": false,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": true,
+            },
+            {
+                "text": "xxxx",
+                "comment": "xxxx",
+                "correct": true,
+            },
+        ]
+    },
+  /*  {
         "text": "A part la goutte épaisse, quel autre examen permet de diagnostiquer le paludisme ?",
         "time": 15,
         "answers": [
@@ -534,5 +586,5 @@ const data = [
                 "correct": false,
             },
         ]
-    }
+    }*/
 ]
