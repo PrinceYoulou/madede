@@ -25,9 +25,9 @@ function buildQuestions(data) {
             if (correct.indexOf("true") == 0) {
                 score += timer;
                 $(".score").text(score);
-                $(this).css("color", "green")
+                $(this).css("background-color", "green")
             } else {
-                $(this).css("color", "red")
+                $(this).css("background-color", "red")
             }
             clearInterval(interval);
             //before increment cusor
@@ -59,8 +59,8 @@ function reBuildUi() {
             } else {
                 localStorage.setItem("score", parseInt(localStorage.getItem("score")) + score);
             }
-            $(".content-action").append('<button class="restart btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">rejouer</button>');
-            $(".content-action").append('<button class="recap btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">recapitulatif</button>');
+            $(".content-action").append('<div class="col-6 text-center"><button class="restart btn btn-md btn-primary madede-color">rejouer</button></div>');
+            $(".content-action").append('<div class="col-6 text-center"><button class="recap btn btn-md btn-primary madede-color">recapitulatif</button></div>');
 
             $(".recap").click(() => {
                 console.log("RECAP");
@@ -68,10 +68,10 @@ function reBuildUi() {
                 $(".recapContent").remove();
                 $("body").prepend("<div class='recapContent'></div>");
                 recap.forEach((element) => {
-                    let template = `<div class="container">
-                    <div class="row" style="margin-top: 5%;">
-                      <div class="col-xs-12" style="padding-left: 15%;padding-right: 15%;">
-                        <div class="card" style="width: 18rem;">
+                    let template = `<div class="container mt-3">
+                    <div class="row mt-3">
+                      <div class="col-12 text-center">
+                        <div class="card">
                           <div class="card-body">
                             <h5 class="card-title" style="color:#003718;">${element.question}</h5>
                             <p class="card-text">
@@ -82,7 +82,7 @@ function reBuildUi() {
                             </p>
                           </div>
                           <ul class="list-group list-group-flush">
-                          <li class="list-group-item ">Votre réponse ${element.response}</li>
+                          <li class="list-group-item ">Votre réponse: ${element.response}</li>
                           </ul>
                         </div>
                       </div>
