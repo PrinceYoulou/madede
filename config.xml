@@ -33,8 +33,6 @@
     <!-- Allow links to web pages to open in a browser -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
-    <!-- Allow tel: links to open the dialer -->
-    <allow-intent href="tel:*" />
 
 
     <!-- access to external links -->
