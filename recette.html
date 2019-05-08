@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/material.css">
-  
+
   <link rel="stylesheet" href="css/all.css">
   <!-- Material Design icon font -->
   <link rel="stylesheet" href="css/family=Material+Icons.css">
@@ -33,14 +33,18 @@
       <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
         <i class="material-icons">more_vert</i>
       </button>
-
       <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
         <li class="mdl-menu__item">
           <a href="partager.html" class="menu">Partager</a>
         </li>
+
         <li class="mdl-menu__item">
-          <a href="aide.html">Aide</a>
+          <a href="favorite.html" class="menu">Favories</a>
         </li>
+        <li class="mdl-menu__item">
+          <a href="aide.html" class="menu">Aide</a>
+        </li>
+
         <!-- <li disabled class="mdl-menu__item">Disabled Action</li> -->
       </ul>
     </nav>
@@ -135,17 +139,86 @@
       <script>
 
         function buildRecipe(recipe) {
+
+          let addIcon = `<i class="material-icons addToFavorite">favorite_border</i>`;
+          let deleteIcon = `<i class="material-icons removeFavorite" style="display:none">favorite</i>`;
+          let localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
+
+          if (localFavorite != null) {
+            let hash = parseInt(window.location.hash.substring(1));
+            localFavorite.forEach(current => {
+              if (current.id === hash) {
+                addIcon = `<i class="material-icons addToFavorite" style="display:none">favorite_border</i>`;
+                deleteIcon = `<i class="material-icons removeFavorite">favorite</i>`;
+              }
+            });
+          }
+
           let template = `<div>
                     <div class="demo-card-image mdl-card mdl-shadow--2dp"
                         style='background:url(${recipe.pathToImage})  center / cover !important'>
                         <div class="mdl-card__title mdl-card--expand"></div>
                         <div class="mdl-card__actions">
                             <span class="demo-card-image__filename"><a
-                                    href="recette.html#${recipe.id}">${recipe.titre}</a></span>
+                                    href="recette.html#${recipe.id}">${recipe.titre}</a> | ${addIcon} ${deleteIcon}
+                  <br></span>
                         </div>
                     </div>
                 </div>`;
           $(".contentImage").append(template);
+
+          $(".addToFavorite").click(function (e) {
+            console.log("ADD =============")
+            localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
+            let hash = parseInt(window.location.hash.substring(1));
+            data.recipes.forEach(element => {
+              let state = true;
+              if (element.id === hash) {
+                let recipes = JSON.parse(localStorage.getItem("local_recipe"));
+                if (recipes == null) {
+                  recipes = []
+                };
+                recipes.forEach(current => {
+                  if (current.id == element.id) {
+                    state = false;
+                  }
+                })
+                if (state) {
+                  recipes.push(element);
+                  localStorage.setItem("local_recipe", JSON.stringify(recipes));
+
+                  $(".removeFavorite").removeAttr("style");
+                  $(".addToFavorite").attr("style", "display:none");
+                }
+              }
+
+            });
+
+          })
+          $(".removeFavorite").click(function (e) {
+            console.log("REMOVE ============")
+
+            localFavorite = JSON.parse(localStorage.getItem("local_recipe"));
+            if (localFavorite != null || localFavorite.length != 0) {
+              localFavorite.forEach((current, index) => {
+                let hash = parseInt(window.location.hash.substring(1));
+                console.log(current);
+                if (current.id === hash) {
+                  localFavorite = localFavorite.filter((m, itemIndex) => {
+                    return itemIndex !== index;
+                  });
+                  console.log(localFavorite);
+                  localStorage.setItem("local_recipe", JSON.stringify(localFavorite));
+                  $(".removeFavorite").attr("style", "display:none");
+
+                  $(".addToFavorite").removeAttr("style");
+
+                }
+              });
+            }
+          });
+
+
         }
 
         function buildIngredient(ingredient) {
