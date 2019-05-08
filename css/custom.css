@@ -179,3 +179,12 @@ h4 {
 	background: #003718 !important;
 	color: white;
 }
+.timer {
+    background-color: #003718;
+    height: auto;
+    margin: 10px;
+    width: auto;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
