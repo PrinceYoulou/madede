@@ -29,7 +29,7 @@
     <preference name="permissions" value="none" />
 
     <!-- plugin for whitelist url / protocols -->
-    <!-- <plugin name="cordova-plugin-whitelist" /> -->
+    <plugin name="cordova-plugin-whitelist" />
     <!-- Allow links to web pages to open in a browser -->
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -54,6 +54,7 @@
     <gap:splash platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/screen-xxhdpi-portrait.png" />
     <gap:splash platform="android" gap:qualifier="port-xxxhdpi" src="res/screen/android/screen-xxxhdpi-portrait.png" />
     <gap:splash src="splash.png" />
+
 
 
 
