@@ -46,11 +46,11 @@ const data = [
         "telephone": "/",
         "localite": "Groupement Songa Zola, District de Boko-Songho, Département de la Bouenza"
 
-    }
+    },
     {
 
         "id": 5,
-        "pathToImage": "./img/avatar.jpg",
+        "pathToImage": "/",
         "firstName": "Jean",
         "lastName": "Paul",
         "fonction": "Producteur de haricots",
@@ -59,7 +59,7 @@ const data = [
         "telephone": "/",
         "localite": "Village Makaya-Makaya, District de Loudima, Département de la Bouenza"
 
-    }
+    },
     {
 
         "id": 6,
@@ -72,11 +72,11 @@ const data = [
         "telephone": "/",
         "localite": "Groupement Songa Zola, District de Boko-Songho, Département de la Bouenza"
 
-    }
+    },
     {
 
         "id": 7,
-        "pathToImage": "./img/avatar.jpg",
+        "pathToImage": "/",
         "firstName": "Sisi",
         "lastName": "MAKEDIKA",
         "fonction": "Productrice de haricots",
@@ -85,12 +85,12 @@ const data = [
         "telephone": "/",
         "localite": "Village Makaya-Makaya, District de Loudima, Département de la Bouenza"
 
-    }
+    },
     {
 
         "id": 8,
-        "pathToImage": "./img/avatar.jpg",
-        "firstName": "Médard"
+        "pathToImage": "/",
+        "firstName": "Médard",
         "lastName": "X",
         "fonction": "Producteur de haricots",
         "description": "Médard fait partie du groupement Kibenza Zola 2 et travaille sur le site Missanga, il produit le haricot depuis deux décennies et complète ses revenus par le maraîchage. « Cela fait 20 ans que je produis le haricot. Le projet me permet d’augmenter la production par rapport à avant ».",
@@ -98,12 +98,12 @@ const data = [
         "telephone": "/",
         "localite": "Groupement Kibenza Zola 2, District de Boko-Songho, Département de la Bouenza"
 
-    }
+    },
     {
 
         "id": 9,
-        "pathToImage": "./img/avatar.jpg",
-        "firstName": "François"
+        "pathToImage": "",
+        "firstName": "François",
         "lastName": "LOUKANOU",
         "fonction": "Producteur de haricots",
         "description": "François produit du haricot depuis de nombreuses années, membre du groupement Songa Zola, l’entraide entre producteurs/trices fait partie des forces du groupement.",
