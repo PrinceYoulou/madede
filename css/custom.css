@@ -186,3 +186,16 @@ h4 {
     margin: 5%;
     text-align: center;
 }
+.timer{
+  background-color: #003718;
+  height:200px;
+  margin: 5%;
+  width: 100px;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.width100 {
+  width: 100%;
+}
