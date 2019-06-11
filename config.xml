@@ -22,7 +22,7 @@
     <platform name="android" />
 
     <!-- icon -->
-    <icon src="logo_EduPalu_icon.png" />
+    <icon src="img/logo.png" />
 
 
     <!-- no permission required -->
@@ -41,20 +41,6 @@
     <access origin="tel:*" launch-external="yes" />
 
     <preference name="fullscreen" value="false" />
-
-
-    <!-- splash screen -->
-    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
-    <preference name="SplashScreen" value="splash" />
-    <preference name="SplashScreenDelay" value="1500" />
-    <gap:splash platform="android" gap:qualifier="port-ldpi"  src="res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash platform="android" gap:qualifier="port-mdpi"  src="res/screen/android/screen-mdpi-portrait.png" />
-    <gap:splash platform="android" gap:qualifier="port-hdpi"  src="res/screen/android/screen-hdpi-portrait.png" />
-    <gap:splash platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
-    <gap:splash platform="android" gap:qualifier="port-xxhdpi" src="res/screen/android/screen-xxhdpi-portrait.png" />
-    <gap:splash platform="android" gap:qualifier="port-xxxhdpi" src="res/screen/android/screen-xxxhdpi-portrait.png" />
-    <gap:splash src="splash.png" />
-
 
 
 
