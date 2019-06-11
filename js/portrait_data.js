@@ -1,7 +1,7 @@
 const data = [
     {
         "id": 1,
-        "pathToImage": "./img/Beatrice Pambou.JPG",
+        "pathToImage": "./img/Beatrice_Pambou.jpg",
         "firstName": "Béatrice",
         "lastName": "PAMBOU",
         "fonction": "Productrice de haricots",
@@ -13,7 +13,7 @@ const data = [
     {
 
         "id": 2,
-        "pathToImage": "./img/Eugenie Ngimbi.JPG",
+        "pathToImage": "./img/Eugenie_Ngimbi.JPG",
         "firstName": "Eugenie",
         "lastName": "NGIMBI",
         "fonction": "Productrice de haricots",
@@ -25,7 +25,7 @@ const data = [
     {
 
         "id": 3,
-        "pathToImage": "./img/Pierre Kimbenga.JPG",
+        "pathToImage": "./img/Pierre_Kimbenga.JPG",
         "firstName": "Pierre",
         "lastName": "KIMBENGA",
         "fonction": "Producteur de haricots",
@@ -37,7 +37,7 @@ const data = [
     {
 
         "id": 4,
-        "pathToImage": "./img/Rodiate Mimounsi.JPG",
+        "pathToImage": "./img/Rodiate_Mimounsi.JPG",
         "firstName": "Rodiate",
         "lastName": "MIMOUNSI",
         "fonction": "Productrice de haricots",
@@ -63,7 +63,7 @@ const data = [
     {
 
         "id": 6,
-        "pathToImage": "./img/Suzanne Bimpala.JPG",
+        "pathToImage": "./img/Suzanne_Bimpala.JPG",
         "firstName": "Suzanne",
         "lastName": "BIMPALA",
         "fonction": "Productrice de haricots",

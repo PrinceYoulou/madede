@@ -25,9 +25,11 @@ function buildQuestions(data) {
             if (correct.indexOf("true") == 0) {
                 score += timer;
                 $(".score").text(score);
-                $(this).css("color", "green")
+                $(this).css("background-color", "green");
+                $(this).css("color", "white")
             } else {
-                $(this).css("color", "red")
+                $(this).css("background-color", "red");
+                $(this).css("color", "white")
             }
             clearInterval(interval);
             //before increment cusor
