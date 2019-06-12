@@ -68,12 +68,12 @@ function reBuildUi() {
                 console.log("RECAP");
                 $(".container-questions").hide();
                 $(".recapContent").remove();
-                $("body").prepend("<div class='recapContent'></div>");
+                $("body").prepend("<div class='recapContent container'></div>");
                 recap.forEach((element) => {
-                    let template = `<div class="container">
-                    <div class="row" style="margin-top: 5%;">
-                      <div class="col-xs-12" style="padding-left: 15%;padding-right: 15%;">
-                        <div class="card" style="width: 18rem;">
+                    let template = `
+                    <div class="row" style="margin-top: 4.5rem;">
+                      <div class="col-12">
+                        <div class="card">
                           <div class="card-body">
                             <h5 class="card-title" style="color:#003718;">${element.question}</h5>
                             <p class="card-text">
@@ -88,8 +88,7 @@ function reBuildUi() {
                           </ul>
                         </div>
                       </div>
-                    </div>
-                  </div>`
+                    </div>`
                     $(".recapContent").append(template)
 
                 });
