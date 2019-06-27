@@ -39,6 +39,10 @@ function buildQuestions(data) {
     });
 }
 
+
+$(".nextButton").click(function () {
+    reBuildUi();
+})
 function reBuildUi() {
     clearInterval(interval);
     setTimeout(function () {
@@ -61,8 +65,8 @@ function reBuildUi() {
             } else {
                 localStorage.setItem("score", parseInt(localStorage.getItem("score")) + score);
             }
-            $(".content-action").append('<button class="restart btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">rejouer</button>');
-            $(".content-action").append('<button class="recap btn btn-sm btn-primary" style="background-color:#003718;border-color:#003718">recapitulatif</button>');
+            $(".content-action").append('<button class="restart btn btn-md btn-success madede-color" style="background-color:#003718;border-color:#003718;">rejouer</button>');
+            $(".content-action").append('<button class="recap btn btn-md btn-success madede-color" style="background-color:#003718;border-color:#003718;">recapitulatif</button>');
 
             $(".recap").click(() => {
                 console.log("RECAP");

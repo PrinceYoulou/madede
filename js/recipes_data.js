@@ -1,52 +1,51 @@
 const data = {
-    "dailyRecipe": {
-        "id": 0,
-        "titre": "Haricots à la tomate",
-        "pathToImage": "./img/main.jpg",
-        "temps": "1h30",
-        "ingredients": [
-            {
-                "nom": "1/2 kg de haricot"
-            },
-            {
-                "nom": "2 boites de tomates pelées fraîches (ou concentré de tomate)"
-            },
-            {
-                "nom": "2 oignons"
-            },
-            {
-                "nom": "2 carottes"
-            },
-            {
-                "nom": "1 botte de ciboule"
-            },
-            {
-                "nom": "Huile de palme (Moambe)"
-            },
-            {
-                "nom": "Sel"
-            },
-            {
-                "nom": "1 bouquet garni"
-            }
-        ],
-        "preparation": `1. Faire tremper le haricot dans de l’eau toute une nuit.<br>
-
-        2. Faire blanchir les haricots en les mettant dans une casserole d'eau et en les
-        portant à petite ébullition 10 mn, puis les égoutter, les mettre dans un récipient et jeter l’eau.<br>
-
-        3. Dans une casserole, faire revenir doucement dans la matière grasse : l’oignon coupé en lamelles,
-        les carottes, la ciboule coupée en tronçons (Vous pouvez ajouter d’autres légumes).<br>
-
-        4. Quand les légumes ont rendu leur eau, ajouter les haricots, la tomate et mélanger. Recouvrir d’eau,
-        mettre un bouquet garni, couvrir.<br>
-
-        5. Laisser cuire 1 h à petit feu. La cuisson peut être plus longue. Goûter et prolonger la cuisson si nécessaire.<br>
-
-        Bon appétit !`
-    },
-
     "recipes": [
+        {
+            "id": 0,
+            "titre": "Haricots à la tomate",
+            "pathToImage": "./img/main.jpg",
+            "temps": "1h30",
+            "ingredients": [
+                {
+                    "nom": "1/2 kg de haricot"
+                },
+                {
+                    "nom": "2 boites de tomates pelées fraîches (ou concentré de tomate)"
+                },
+                {
+                    "nom": "2 oignons"
+                },
+                {
+                    "nom": "2 carottes"
+                },
+                {
+                    "nom": "1 botte de ciboule"
+                },
+                {
+                    "nom": "Huile de palme (Moambe)"
+                },
+                {
+                    "nom": "Sel"
+                },
+                {
+                    "nom": "1 bouquet garni"
+                }
+            ],
+            "preparation": `1. Faire tremper le haricot dans de l’eau toute une nuit.<br>
+    
+            2. Faire blanchir les haricots en les mettant dans une casserole d'eau et en les
+            portant à petite ébullition 10 mn, puis les égoutter, les mettre dans un récipient et jeter l’eau.<br>
+    
+            3. Dans une casserole, faire revenir doucement dans la matière grasse : l’oignon coupé en lamelles,
+            les carottes, la ciboule coupée en tronçons (Vous pouvez ajouter d’autres légumes).<br>
+    
+            4. Quand les légumes ont rendu leur eau, ajouter les haricots, la tomate et mélanger. Recouvrir d’eau,
+            mettre un bouquet garni, couvrir.<br>
+    
+            5. Laisser cuire 1 h à petit feu. La cuisson peut être plus longue. Goûter et prolonger la cuisson si nécessaire.<br>
+    
+            Bon appétit !`
+        },
         {
 
             "id": 1,
@@ -226,19 +225,19 @@ const data = {
                 {
                     "nom": "3 aubergines"
                 },
-                 {
+                {
                     "nom": "3 oignons"
                 },
                 {
                     "nom": "3 boites de tomate pelée fraîche (ou concentré de tomate)"
                 },
-                 {
+                {
                     "nom": "Curry"
                 },
                 {
                     "nom": "Paprika"
                 },
-                 {
+                {
                     "nom": "Sel"
                 },
                 {
@@ -457,7 +456,7 @@ const data = {
 
         Bon appétit !`
         },
-         {
+        {
 
             "id": 8,
             "titre": "Salade d’haricots rouges, sauce tomate pimentée et guacamole",
@@ -510,7 +509,7 @@ const data = {
 
             Bon appétit !`
         },
-         {
+        {
 
             "id": 9,
             "titre": "Salade d’haricots rouges, courgettes et chèvre",

@@ -169,13 +169,24 @@
 
         let hash = parseInt(window.location.hash.substring(1));
         if (hash === 0) {
-          buildRecipe(data.dailyRecipe);
-          let contentIngredient = data.dailyRecipe.ingredients.forEach(element => {
-            buildIngredient(element.nom);
+
+          data.recipes.forEach(element => {
+            if (element.id === 0) {
+              buildRecipe(element);
+              element.ingredients.forEach(ingredient => {
+                buildIngredient(ingredient.nom);
+              });
+              addPreparation(element.preparation);
+            }
           });
-
-          addPreparation(data.dailyRecipe.preparation);
-
+          /*
+                    buildRecipe(data.dailyRecipe);
+                    let contentIngredient = data.dailyRecipe.ingredients.forEach(element => {
+                      buildIngredient(element.nom);
+                    });
+          
+                    addPreparation(data.dailyRecipe.preparation);
+          */
 
         } else {
           data.recipes.forEach(element => {
