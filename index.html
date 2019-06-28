@@ -117,13 +117,15 @@
       <script>
         function buildFirstRecipe(recipe) {
           let template = `<div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet recette_">
+          <a href="recette.html#${recipe.id}">
           <div class="demo-card-image mdl-card card-main mdl-shadow--2dp" style='background:url(${recipe.pathToImage}) center / cover !important'>
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions filename_main">
               Recette du jour <br>
-              <span class="demo-card-image__filename"><a href="recette.html#${recipe.id}">${recipe.titre}</a></span>
+              <span class="demo-card-image__filename">${recipe.titre}</span>
             </div>
           </div>
+          </a>
         </div>`;
           $("#_main").append(template);
         }
@@ -131,12 +133,14 @@
         function buildOtherRecipes(recipe) {
           let template = `
         <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone mdl-cell--2-col-tablet">
+         <a href="recette.html#${recipe.id}">
           <div class="demo-card-image mdl-card mdl-shadow--2dp"  style='background:url(${recipe.pathToImage})  center / cover !important'>
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
-              <span class="demo-card-image__filename"><a href="recette.html#${recipe.id}">${recipe.titre}</a></span>
+              <span class="demo-card-image__filename">${recipe.titre}</span>
             </div>
           </div>
+          </a>
         </div>`;
           $("#_main").append(template);
         }
